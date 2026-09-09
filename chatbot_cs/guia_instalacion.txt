@@ -1,0 +1,132 @@
+============================================================
+  INSTRUCCIONES PARA PONER EN MARCHA EL CHATBOT EN LOCAL
+============================================================
+
+Estas instrucciones permiten a cualquier compañero clonar el
+repositorio y ejecutar el chatbot en su propio ordenador.
+
+------------------------------------------------------------
+1. REQUISITOS PREVIOS
+------------------------------------------------------------
+- Tener instalado Python 3.10 o superior
+- Tener instalado Git
+- Contar con una clave de API (OpenAI, xAI/Grok, o la que use
+  el proyecto) si el chatbot la necesita
+
+Comprueba las versiones:
+  python --version
+  git --version
+
+------------------------------------------------------------
+2. CLONAR EL REPOSITORIO
+------------------------------------------------------------
+Abre una terminal y ejecuta:
+
+  git clone <URL_DEL_REPOSITORIO>
+  cd <nombre-del-repositorio>
+
+Sustituye <URL_DEL_REPOSITORIO> por la URL real del repo
+compartido de GitHub.
+
+------------------------------------------------------------
+3. CREAR Y ACTIVAR ENTORNO VIRTUAL
+------------------------------------------------------------
+Es muy recomendable usar un entorno virtual para no mezclar
+dependencias con el sistema:
+
+  python -m venv venv
+
+Activar el entorno:
+
+  # En Windows:
+  venv\Scripts\activate
+
+  # En macOS / Linux:
+  source venv/bin/activate
+
+Verás que el prompt de la terminal cambia y muestra "(venv)".
+
+------------------------------------------------------------
+4. INSTALAR DEPENDENCIAS
+------------------------------------------------------------
+Con el entorno virtual activado, instala todo lo necesario:
+
+  pip install -r requirements.txt
+
+Si el proyecto usa poetry o uv, sigue las instrucciones
+específicas del README principal del repositorio.
+
+------------------------------------------------------------
+5. CONFIGURAR VARIABLES DE ENTORNO
+------------------------------------------------------------
+Crea un archivo llamado .env en la raíz del proyecto
+(copia el ejemplo si existe):
+
+  cp .env.example .env
+
+Edita el archivo .env y añade tu clave de API:
+
+  OPENAI_API_KEY=tu_clave_aqui
+  # o
+  XAI_API_KEY=tu_clave_aqui
+
+¡Importante! Nunca subas el archivo .env al repositorio.
+Asegúrate de que esté en el .gitignore.
+
+------------------------------------------------------------
+6. EJECUTAR EL CHATBOT
+------------------------------------------------------------
+Dependiendo de cómo esté estructurado el proyecto, el comando
+puede ser uno de estos:
+
+  python main.py
+  # o
+  python app.py
+  # o
+  streamlit run app.py
+  # o
+  uvicorn main:app --reload
+
+Consulta el README.md del repositorio para el comando exacto
+de arranque.
+
+Una vez iniciado, abre el navegador en la URL que indique
+la terminal (normalmente http://localhost:8501 o
+http://localhost:8000).
+
+------------------------------------------------------------
+7. SOLUCIÓN DE PROBLEMAS COMUNES
+------------------------------------------------------------
+- Error "ModuleNotFoundError":
+  Asegúrate de tener el entorno virtual activado y de haber
+  ejecutado "pip install -r requirements.txt".
+
+- Error de autenticación / API key:
+  Revisa que el archivo .env existe, tiene el nombre correcto
+  de la variable y la clave es válida.
+
+- Puerto ya en uso:
+  Cambia el puerto o cierra la aplicación que lo esté usando.
+
+- Problemas con Git en Windows:
+  Usa Git Bash o asegúrate de tener Git correctamente
+  configurado.
+
+------------------------------------------------------------
+8. DESACTIVAR EL ENTORNO VIRTUAL
+------------------------------------------------------------
+Cuando termines de trabajar:
+
+  deactivate
+
+------------------------------------------------------------
+Notas finales
+------------------------------------------------------------
+- Si el proyecto tiene un README.md más completo, síguelo
+  prioritariamente.
+- Cualquier duda, pregunta al equipo o abre un issue en
+  el repositorio.
+
+¡Listo! Con estos pasos el chatbot debería funcionar en
+cualquier ordenador local.
+============================================================
