@@ -1,5 +1,17 @@
 {
-  "dependencies": {
-    "express": "^5.2.1"
-  }
+    "name": "backendtc2005b",
+    "version": "1.0.0",
+    "main": "backend/server.js",
+    "scripts": {
+        "start": "node backend/server.js",
+        "dev": "node backend/server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.6",
+        "express": "^5.2.1",
+        "sqlite3": "^6.0.1"
+    },
+    "devDependencies": {
+        "concurrently": "^10.0.5"
+    }
 }

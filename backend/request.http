@@ -1,0 +1,91 @@
+@baseUrl = http://localhost:3000/api
+
+### ==========================================
+### 1. AUTENTICACIÓN (/api/login)
+### ==========================================
+
+### 1.1 Login Exitoso - Juan Pérez (Colaborador)
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "juan.perez@eslabon.com",
+  "password": "password123"
+}
+
+### 1.2 Login Exitoso - María López (Colaborador)
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "maria.lopez@eslabon.com",
+  "password": "password456"
+}
+
+### 1.3 Login Fallido - Contraseña Incorrecta (Debe responder 401 Unauthorized)
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "juan.perez@eslabon.com",
+  "password": "password_erronea"
+}
+
+### 1.4 Login Fallido - Usuario Inexistente (Debe responder 401 Unauthorized)
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "no.existe@eslabon.com",
+  "password": "password123"
+}
+
+### 1.5 Login Fallido - Campos Faltantes (Debe responder 400 Bad Request)
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "juan.perez@eslabon.com"
+}
+
+
+### ==========================================
+### 2. PERFIL DE EMPLEADO (/api/perfil)
+### ==========================================
+
+### 2.1 Obtener Perfil del Empleado Logueado (Juan Pérez EP-4091 por defecto)
+GET {{baseUrl}}/perfil
+
+### 2.2 Obtener Perfil especificando id (María López EP-4092)
+GET {{baseUrl}}/perfil?empleado_id=EP-4092
+
+### 2.3 Obtener Perfil de Empleado Inexistente (Debe responder 404 Not Found)
+GET {{baseUrl}}/perfil?empleado_id=EP-9999
+
+
+### ==========================================
+### 3. LISTADO DE NÓMINAS (/api/nominas)
+### ==========================================
+
+### 3.1 Listar todas las nóminas del empleado (EP-4091)
+GET {{baseUrl}}/nominas?empleado_id=EP-4091
+
+### 3.2 Listar nóminas del empleado filtradas por Año y Mes (Agosto 2026)
+GET {{baseUrl}}/nominas?empleado_id=EP-4091&anio=2026&mes=8
+
+### 3.3 Listar nóminas del empleado filtradas por un Mes sin registros (Julio 2025)
+GET {{baseUrl}}/nominas?empleado_id=EP-4091&anio=2025&mes=7
+
+
+### ==========================================
+### 4. DETALLE DE RECIBO DE NÓMINA (/api/nominas/:id)
+### ==========================================
+
+### 4.1 Obtener detalle completo del recibo NOM-2026-15 (Encabezado + Percepciones/Deducciones)
+GET {{baseUrl}}/nominas/NOM-2026-15
+
+### 4.2 Obtener detalle completo del recibo NOM-2026-14
+GET {{baseUrl}}/nominas/NOM-2026-14
+
+### 4.3 Consultar recibo de nómina inexistente (Debe responder 404 Not Found)
+GET {{baseUrl}}/nominas/NOM-INEXISTENTE
