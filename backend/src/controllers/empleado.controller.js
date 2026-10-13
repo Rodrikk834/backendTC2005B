@@ -3,7 +3,7 @@ const EmpleadoService = require('../services/empleado.service');
 const EmpleadoController = {
   async getPerfil(req, res) {
     try {
-      const empleadoId = req.user?.id || req.query.empleado_id || 'EP-4091';
+      const empleadoId = req.user?.id_empleado || req.user?.id || req.query.empleado_id || 1;
 
       const perfil = await EmpleadoService.getPerfil(empleadoId);
       if (!perfil) {

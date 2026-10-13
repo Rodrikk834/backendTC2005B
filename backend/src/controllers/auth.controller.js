@@ -4,13 +4,13 @@ const AuthController = {
   async login(req, res) {
     try {
       const { email, username, password } = req.body;
-      const loginEmail = email || username;
+      const loginUser = email || username;
 
-      if (!loginEmail || !password) {
-        return res.status(400).json({ error: 'El correo (o usuario) y la contraseña son requeridos.' });
+      if (!loginUser || !password) {
+        return res.status(400).json({ error: 'El usuario/correo y la contraseña son requeridos.' });
       }
 
-      const sessionData = await AuthService.authenticate(loginEmail, password);
+      const sessionData = await AuthService.authenticate(loginUser, password);
       if (!sessionData) {
         return res.status(401).json({ error: 'Credenciales inválidas.' });
       }
@@ -19,11 +19,11 @@ const AuthController = {
         message: 'Inicio de sesión exitoso',
         token: sessionData.token,
         user: {
-          id: sessionData.id,
+          id: sessionData.id_empleado || sessionData.id,
           nombre: sessionData.nombre,
           email: sessionData.email,
-          rol: sessionData.rol,
-          avatar: sessionData.avatar
+          username: sessionData.username,
+          rol: sessionData.rol
         }
       });
     } catch (error) {

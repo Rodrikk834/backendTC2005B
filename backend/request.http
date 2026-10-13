@@ -4,48 +4,31 @@
 ### 1. AUTENTICACIÓN (/api/login)
 ### ==========================================
 
-### 1.1 Login Exitoso - Juan Pérez (Colaborador)
+### 1.1 Login Colaborador (Juan Pérez)
 POST {{baseUrl}}/login
 Content-Type: application/json
 
 {
-  "email": "juan.perez@eslabon.com",
+  "username": "juan.perez",
   "password": "password123"
 }
 
-### 1.2 Login Exitoso - María López (Colaborador)
+### 1.2 Login Administrador / RH (María López)
 POST {{baseUrl}}/login
 Content-Type: application/json
 
 {
-  "email": "maria.lopez@eslabon.com",
+  "username": "maria.lopez",
   "password": "password456"
 }
 
-### 1.3 Login Fallido - Contraseña Incorrecta (Debe responder 401 Unauthorized)
+### 1.3 Login Jefe / Gerente (Carlos Mendoza)
 POST {{baseUrl}}/login
 Content-Type: application/json
 
 {
-  "email": "juan.perez@eslabon.com",
-  "password": "password_erronea"
-}
-
-### 1.4 Login Fallido - Usuario Inexistente (Debe responder 401 Unauthorized)
-POST {{baseUrl}}/login
-Content-Type: application/json
-
-{
-  "email": "no.existe@eslabon.com",
-  "password": "password123"
-}
-
-### 1.5 Login Fallido - Campos Faltantes (Debe responder 400 Bad Request)
-POST {{baseUrl}}/login
-Content-Type: application/json
-
-{
-  "email": "juan.perez@eslabon.com"
+  "username": "carlos.mendoza",
+  "password": "password789"
 }
 
 
@@ -53,39 +36,169 @@ Content-Type: application/json
 ### 2. PERFIL DE EMPLEADO (/api/perfil)
 ### ==========================================
 
-### 2.1 Obtener Perfil del Empleado Logueado (Juan Pérez EP-4091 por defecto)
-GET {{baseUrl}}/perfil
-
-### 2.2 Obtener Perfil especificando id (María López EP-4092)
-GET {{baseUrl}}/perfil?empleado_id=EP-4092
-
-### 2.3 Obtener Perfil de Empleado Inexistente (Debe responder 404 Not Found)
-GET {{baseUrl}}/perfil?empleado_id=EP-9999
+### Obtener Perfil del Empleado (id_empleado = 1 por defecto)
+GET {{baseUrl}}/perfil?empleado_id=1
 
 
 ### ==========================================
-### 3. LISTADO DE NÓMINAS (/api/nominas)
+### 3. RECIBOS DE NÓMINA (/api/nominas)
 ### ==========================================
 
-### 3.1 Listar todas las nóminas del empleado (EP-4091)
-GET {{baseUrl}}/nominas?empleado_id=EP-4091
+### Listar todas las nóminas
+GET {{baseUrl}}/nominas?empleado_id=1
 
-### 3.2 Listar nóminas del empleado filtradas por Año y Mes (Agosto 2026)
-GET {{baseUrl}}/nominas?empleado_id=EP-4091&anio=2026&mes=8
-
-### 3.3 Listar nóminas del empleado filtradas por un Mes sin registros (Julio 2025)
-GET {{baseUrl}}/nominas?empleado_id=EP-4091&anio=2025&mes=7
+### Detalle de Recibo de Nómina
+GET {{baseUrl}}/nominas/1
 
 
 ### ==========================================
-### 4. DETALLE DE RECIBO DE NÓMINA (/api/nominas/:id)
+### 4. MÓDULO DE SOLICITUDES (/api/solicitudes)
 ### ==========================================
 
-### 4.1 Obtener detalle completo del recibo NOM-2026-15 (Encabezado + Percepciones/Deducciones)
-GET {{baseUrl}}/nominas/NOM-2026-15
+### 4.1 Listar Solicitudes Personales del Empleado
+GET {{baseUrl}}/solicitudes?empleado_id=1
 
-### 4.2 Obtener detalle completo del recibo NOM-2026-14
-GET {{baseUrl}}/nominas/NOM-2026-14
+### 4.2 Crear Nueva Solicitud de Vacaciones
+POST {{baseUrl}}/solicitudes
+Content-Type: application/json
 
-### 4.3 Consultar recibo de nómina inexistente (Debe responder 404 Not Found)
-GET {{baseUrl}}/nominas/NOM-INEXISTENTE
+{
+  "empleado_id": 1,
+  "tipo": "VAC",
+  "datos": {
+    "fecha_inicio": "2026-11-01",
+    "fecha_fin": "2026-11-05",
+    "fecha_regreso": "2026-11-06",
+    "dias_solicitados": 5
+  }
+}
+
+### 4.3 Obtener Detalle de una Solicitud por ID
+GET {{baseUrl}}/solicitudes/1
+
+### ------------------------------------------
+### SISTEMA MULTI-ROL: BANDEJA DE EQUIPO Y APROBACIONES
+### ------------------------------------------
+
+### 4.4 Bandeja de Aprobaciones del Jefe (Carlos Mendoza - id_empleado = 3)
+GET {{baseUrl}}/solicitudes/equipo?jefe_id=3
+
+### 4.5 Bandeja Global de RH / Admin (María López - id_empleado = 2)
+GET {{baseUrl}}/solicitudes/equipo?jefe_id=2
+
+### 4.6 Aprobar Solicitud (Por ID de solicitud)
+PUT {{baseUrl}}/solicitudes/3/aprobar
+Content-Type: application/json
+
+{
+  "autorizador_id": 3
+}
+
+### 4.7 Rechazar Solicitud (Con motivo obligatorio)
+PUT {{baseUrl}}/solicitudes/3/rechazar
+Content-Type: application/json
+
+{
+  "autorizador_id": 3,
+  "motivo_rechazo": "Fechas empalmadas con el cierre de trimestre del área."
+}
+
+
+### ==========================================
+### 5. MÓDULO DE ASISTENCIA Y KÁRDEX (/api/asistencia)
+### ==========================================
+
+### Listar Registros de Asistencia
+GET {{baseUrl}}/asistencia?empleado_id=1
+
+### Bitacora y KPIs de Asistencia
+GET {{baseUrl}}/asistencia/bitacora?empleado_id=1
+
+
+### ==========================================
+### 6. MÓDULO DE NOTICIAS (/api/noticias)
+### ==========================================
+
+### 6.1 Feed de Noticias y Eventos Institucionales
+GET {{baseUrl}}/noticias
+
+### 6.2 Ver Detalle de Noticia por ID
+GET {{baseUrl}}/noticias/1
+
+### 6.3 Crear Noticia (Rol: RH / Administrador)
+POST {{baseUrl}}/noticias
+Content-Type: application/json
+
+{
+  "titulo": "Nuevo Protocolo de Seguridad en la Oficina",
+  "categoria": "Seguridad",
+  "resumen": "Actualización en los gafetes de proximidad y accesos vehiculares.",
+  "contenido": "A partir del próximo lunes entra en vigor el nuevo sistema de acreditación digital en el edificio central.",
+  "autor": "Recursos Humanos",
+  "es_destacado": true
+}
+
+### 6.4 Editar Noticia (Rol: RH / Administrador)
+PUT {{baseUrl}}/noticias/1
+Content-Type: application/json
+
+{
+  "titulo": "Anuncio Oficial: Nuevo Programa de Beneficios Corporativos 2026 (Actualizado)",
+  "resumen": "Se amplían los convenios recreativos y de salud médica para colaboradores."
+}
+
+### 6.5 Eliminar Noticia (Rol: RH / Administrador)
+DELETE {{baseUrl}}/noticias/3
+
+
+### ==========================================
+### 7. MÓDULO DE GAMIFICACIÓN (/api/gamificacion)
+### ==========================================
+
+### 7.1 Resumen Consolidado de Gamificación (User 1)
+GET {{baseUrl}}/gamificacion/resumen?userId=1
+
+### 7.2 Resumen Consolidado de Gamificación (User 2)
+GET {{baseUrl}}/gamificacion/resumen?userId=2
+
+### 7.3 Leaderboard Departamental
+GET {{baseUrl}}/gamificacion/leaderboard
+
+### 7.4 Reclamar Racha Diaria (+50 Puntos - Primer reclamo del día: 200 OK)
+POST {{baseUrl}}/gamificacion/reclamar-diario
+Content-Type: application/json
+
+{
+  "usuario_id": 1
+}
+
+### 7.5 Intentar Reclamar Nuevamente Hoy (Debe responder 409 Conflict)
+POST {{baseUrl}}/gamificacion/reclamar-diario
+Content-Type: application/json
+
+{
+  "usuario_id": 1
+}
+
+### 7.6 Consultar si el Usuario puede jugar hoy
+GET {{baseUrl}}/gamificacion/partida/estado?userId=1
+
+### 7.7 Registrar Puntuación de Partida Unity (Primer intento del día: 201 Created)
+POST {{baseUrl}}/gamificacion/partida
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "score": 250,
+  "minigameId": 1,
+  "tiempo_jugado_segundos": 95
+}
+
+### 7.8 Intentar Registrar un Segundo Intento Hoy (Debe responder 409 Conflict)
+POST {{baseUrl}}/gamificacion/partida
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "score": 300
+}
