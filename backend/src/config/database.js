@@ -12,6 +12,11 @@ const dbConfig = {
     trustServerCertificate: process.env.DB_TRUST_SERVER_CERTIFICATE !== 'false'
   }
 };
+console.log('=== DB CONFIG ===');
+console.log('USER:', dbConfig.user);
+console.log('SERVER:', dbConfig.server);
+console.log('DATABASE:', dbConfig.database);
+console.log('PASSWORD length:', dbConfig.password ? dbConfig.password.length : 0);
 
 let poolPromise = null;
 
