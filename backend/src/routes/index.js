@@ -12,6 +12,8 @@ const GamificacionController = require('../controllers/gamificacion.controller')
 const apiRouter = Router();
 
 apiRouter.post('/login', AuthController.login);
+apiRouter.post('/verify-2fa', AuthController.verify2FA);
+apiRouter.post('/resend-2fa', AuthController.resend2FA);
 apiRouter.use('/auth', authRoutes);
 apiRouter.use('/perfil', empleadoRoutes);
 apiRouter.use('/', empleadoRoutes);
