@@ -61,12 +61,16 @@ const SolicitudesService = {
         ISNULL(pr.monto_solicitado, 0) AS prestamo_monto,
         ISNULL(pr.numero_plazos, 0) AS prestamo_plazos,
         CONVERT(VARCHAR, pr.fecha_primer_descuento, 23) AS prestamo_fecha_descuento,
-        act.json_cambios_propuestos AS cambios_json
+        act.json_cambios_propuestos AS cambios_json,
+        e_sol.id_departamento,
+        pu.nivel_jerarquico AS empleado_nivel,
+        u_sol.rol AS empleado_rol
       FROM SOLICITUDES_CABECERA s
       INNER JOIN EMPLEADOS e_sol ON s.id_empleado_solicitante = e_sol.id_empleado
       INNER JOIN PERSONAS p ON e_sol.id_persona = p.id_persona
       LEFT JOIN CAT_DEPARTAMENTOS d ON e_sol.id_departamento = d.id_departamento
       LEFT JOIN CAT_PUESTOS pu ON e_sol.id_puesto = pu.id_puesto
+      LEFT JOIN USUARIOS_PORTAL u_sol ON e_sol.id_empleado = u_sol.id_empleado
       INNER JOIN CAT_TIPOS_SOLICITUD t ON s.id_tipo_solicitud = t.id_tipo_solicitud
       LEFT JOIN SOL_VACACIONES v ON s.id_solicitud = v.id_solicitud
       LEFT JOIN SOL_PRESTAMOS pr ON s.id_solicitud = pr.id_solicitud
@@ -152,7 +156,8 @@ const SolicitudesService = {
         e.id_empleado,
         e.id_departamento,
         u.rol,
-        p.nivel_jerarquico
+        p.nivel_jerarquico,
+        p.nombre_puesto
       FROM EMPLEADOS e
       LEFT JOIN USUARIOS_PORTAL u ON e.id_empleado = u.id_empleado
       LEFT JOIN CAT_PUESTOS p ON e.id_puesto = p.id_puesto
@@ -161,24 +166,22 @@ const SolicitudesService = {
 
     const jefeEmpId = jefeInfo ? jefeInfo.id_empleado : paramId;
     const rolStr = String(jefeInfo?.rol || '').toLowerCase();
-    const esAdmin = ['administrador', 'admin', 'recursos humanos', 'rh'].includes(rolStr);
+    const puestoStr = String(jefeInfo?.nombre_puesto || '').toLowerCase();
+    const nivelJerarquico = jefeInfo?.nivel_jerarquico != null ? parseInt(jefeInfo.nivel_jerarquico, 10) : 2;
+    const esJefeJefazo = nivelJerarquico === 1 || ['director', 'directora'].some(w => puestoStr.includes(w));
     const deptoId = jefeInfo ? jefeInfo.id_departamento : null;
 
     let whereClause = '';
     const queryParams = { jefeEmpId };
 
-    if (esAdmin) {
-      // Admins y RH pueden ver todas las solicitudes corporativas o filtrar por departamento
-      if (filtros.departamento_id) {
-        whereClause = 'WHERE e_sol.id_departamento = @deptoFiltro';
-        queryParams.deptoFiltro = parseInt(filtros.departamento_id, 10);
-      } else {
-        whereClause = 'WHERE 1=1';
-      }
+    if (esJefeJefazo) {
+      // El jefe jefazo sólo puede ver y aceptar solicitudes de los Jefes / Gerentes de área
+      whereClause = `WHERE e_sol.id_empleado <> @jefeEmpId AND (pu.nivel_jerarquico = 2 OR u_sol.rol = 'Jefe' OR pu.nombre_puesto LIKE '%Gerente%')`;
     } else {
-      // Jefes / Gerentes de área: ven a sus subordinados directos o a los de su departamento (excluyéndose a sí mismos)
-      whereClause = `WHERE (e_sol.id_jefe_inmediato = @jefeEmpId OR (e_sol.id_departamento = @deptoId AND e_sol.id_empleado <> @jefeEmpId))`;
+      // Cada jefe de área sólo puede ver y aceptar solicitudes de colaboradores de su propio departamento
+      whereClause = `WHERE (e_sol.id_departamento = @deptoId AND e_sol.id_empleado <> @jefeEmpId AND (pu.nivel_jerarquico > @nivelJerarquico OR u_sol.rol = 'Colaborador' OR e_sol.id_jefe_inmediato = @jefeEmpId))`;
       queryParams.deptoId = deptoId;
+      queryParams.nivelJerarquico = nivelJerarquico;
     }
 
     if (filtros.estatus) {
@@ -213,12 +216,16 @@ const SolicitudesService = {
         ISNULL(pr.monto_solicitado, 0) AS prestamo_monto,
         ISNULL(pr.numero_plazos, 0) AS prestamo_plazos,
         CONVERT(VARCHAR, pr.fecha_primer_descuento, 23) AS prestamo_fecha_descuento,
-        act.json_cambios_propuestos AS cambios_json
+        act.json_cambios_propuestos AS cambios_json,
+        e_sol.id_departamento,
+        pu.nivel_jerarquico AS empleado_nivel,
+        u_sol.rol AS empleado_rol
       FROM SOLICITUDES_CABECERA s
       INNER JOIN EMPLEADOS e_sol ON s.id_empleado_solicitante = e_sol.id_empleado
       INNER JOIN PERSONAS p ON e_sol.id_persona = p.id_persona
       LEFT JOIN CAT_DEPARTAMENTOS d ON e_sol.id_departamento = d.id_departamento
       LEFT JOIN CAT_PUESTOS pu ON e_sol.id_puesto = pu.id_puesto
+      LEFT JOIN USUARIOS_PORTAL u_sol ON e_sol.id_empleado = u_sol.id_empleado
       INNER JOIN CAT_TIPOS_SOLICITUD t ON s.id_tipo_solicitud = t.id_tipo_solicitud
       LEFT JOIN SOL_VACACIONES v ON s.id_solicitud = v.id_solicitud
       LEFT JOIN SOL_PRESTAMOS pr ON s.id_solicitud = pr.id_solicitud
@@ -275,6 +282,47 @@ const SolicitudesService = {
     const existente = await this.getSolicitudById(solicitudId);
     if (!existente) return null;
 
+    // Validar autorización según jerarquía
+    const autorizadorInfo = await dbQuery.getOne(`
+      SELECT 
+        e.id_empleado,
+        e.id_departamento,
+        u.rol,
+        p.nivel_jerarquico,
+        p.nombre_puesto
+      FROM EMPLEADOS e
+      LEFT JOIN USUARIOS_PORTAL u ON e.id_empleado = u.id_empleado
+      LEFT JOIN CAT_PUESTOS p ON e.id_puesto = p.id_puesto
+      WHERE e.id_empleado = @autId
+    `, { autId });
+
+    if (autorizadorInfo) {
+      if (existente.empleado_id === autorizadorInfo.id_empleado) {
+        throw new Error('Un supervisor o líder no puede autorizar su propia solicitud.');
+      }
+
+      const autNivel = autorizadorInfo.nivel_jerarquico != null ? parseInt(autorizadorInfo.nivel_jerarquico, 10) : 2;
+      const autPuesto = String(autorizadorInfo.nombre_puesto || '').toLowerCase();
+      const esJefazo = autNivel === 1 || ['director', 'directora'].some(w => autPuesto.includes(w));
+
+      if (esJefazo) {
+        // El Jefe Jefazo sólo puede autorizar solicitudes de los Jefes (nivel 2 / rol 'Jefe' / puesto Gerente)
+        const solNivel = existente.empleado_nivel != null ? parseInt(existente.empleado_nivel, 10) : 3;
+        const solRol = String(existente.empleado_rol || '').toLowerCase();
+        const solPuesto = String(existente.puesto || '').toLowerCase();
+        const esJefeSolicitante = solNivel === 2 || solRol === 'jefe' || solPuesto.includes('gerente');
+
+        if (!esJefeSolicitante) {
+          throw new Error('La Dirección General (Jefe Jefazo) sólo puede autorizar solicitudes de los Jefes y Gerentes de área.');
+        }
+      } else {
+        // Cada jefe de área sólo puede autorizar a empleados de su propio departamento
+        if (existente.id_departamento && autorizadorInfo.id_departamento && existente.id_departamento !== autorizadorInfo.id_departamento) {
+          throw new Error('Sólo puedes autorizar solicitudes pertenecientes a colaboradores de tu propio departamento.');
+        }
+      }
+    }
+
     await dbQuery.query(`
       UPDATE SOLICITUDES_CABECERA
       SET 
@@ -303,6 +351,47 @@ const SolicitudesService = {
 
     const existente = await this.getSolicitudById(solicitudId);
     if (!existente) return null;
+
+    // Validar autorización según jerarquía
+    const autorizadorInfo = await dbQuery.getOne(`
+      SELECT 
+        e.id_empleado,
+        e.id_departamento,
+        u.rol,
+        p.nivel_jerarquico,
+        p.nombre_puesto
+      FROM EMPLEADOS e
+      LEFT JOIN USUARIOS_PORTAL u ON e.id_empleado = u.id_empleado
+      LEFT JOIN CAT_PUESTOS p ON e.id_puesto = p.id_puesto
+      WHERE e.id_empleado = @autId
+    `, { autId });
+
+    if (autorizadorInfo) {
+      if (existente.empleado_id === autorizadorInfo.id_empleado) {
+        throw new Error('Un supervisor o líder no puede rechazar su propia solicitud.');
+      }
+
+      const autNivel = autorizadorInfo.nivel_jerarquico != null ? parseInt(autorizadorInfo.nivel_jerarquico, 10) : 2;
+      const autPuesto = String(autorizadorInfo.nombre_puesto || '').toLowerCase();
+      const esJefazo = autNivel === 1 || ['director', 'directora'].some(w => autPuesto.includes(w));
+
+      if (esJefazo) {
+        // El Jefe Jefazo sólo puede rechazar solicitudes de los Jefes (nivel 2 / rol 'Jefe' / puesto Gerente)
+        const solNivel = existente.empleado_nivel != null ? parseInt(existente.empleado_nivel, 10) : 3;
+        const solRol = String(existente.empleado_rol || '').toLowerCase();
+        const solPuesto = String(existente.puesto || '').toLowerCase();
+        const esJefeSolicitante = solNivel === 2 || solRol === 'jefe' || solPuesto.includes('gerente');
+
+        if (!esJefeSolicitante) {
+          throw new Error('La Dirección General (Jefe Jefazo) sólo puede rechazar solicitudes de los Jefes y Gerentes de área.');
+        }
+      } else {
+        // Cada jefe de área sólo puede rechazar a empleados de su propio departamento
+        if (existente.id_departamento && autorizadorInfo.id_departamento && existente.id_departamento !== autorizadorInfo.id_departamento) {
+          throw new Error('Sólo puedes rechazar solicitudes pertenecientes a colaboradores de tu propio departamento.');
+        }
+      }
+    }
 
     await dbQuery.query(`
       UPDATE SOLICITUDES_CABECERA
