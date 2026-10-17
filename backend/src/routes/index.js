@@ -1,4 +1,5 @@
 const { Router } = require('express');
+
 const authRoutes = require('./auth.routes');
 const AuthController = require('../controllers/auth.controller');
 const empleadoRoutes = require('./empleado.routes');
@@ -8,12 +9,16 @@ const asistenciaRoutes = require('./asistencia.routes');
 const noticiasRoutes = require('./noticias.routes');
 const gamificacionRoutes = require('./gamificacion.routes');
 const GamificacionController = require('../controllers/gamificacion.controller');
+const oficinaRoutes = require('./oficina.routes');
 
 const apiRouter = Router();
 
 apiRouter.post('/login', AuthController.login);
 apiRouter.post('/verify-2fa', AuthController.verify2FA);
 apiRouter.post('/resend-2fa', AuthController.resend2FA);
+apiRouter.post('/partida', GamificacionController.registrarPartida);
+apiRouter.post('/partidas', GamificacionController.registrarPartida);
+
 apiRouter.use('/auth', authRoutes);
 apiRouter.use('/perfil', empleadoRoutes);
 apiRouter.use('/', empleadoRoutes);
@@ -23,7 +28,6 @@ apiRouter.use('/asistencia', asistenciaRoutes);
 apiRouter.use('/noticias', noticiasRoutes);
 apiRouter.use('/gamificacion', gamificacionRoutes);
 
-apiRouter.post('/partida', GamificacionController.registrarPartida);
-apiRouter.post('/partidas', GamificacionController.registrarPartida);
+apiRouter.use('/oficina', oficinaRoutes);
 
 module.exports = apiRouter;
