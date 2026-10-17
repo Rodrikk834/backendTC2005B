@@ -5,3 +5,5 @@ function hashPassword(plainTextPassword) {
 }
 
 module.exports = { hashPassword };
+
+console.log(hashPassword("password789"));

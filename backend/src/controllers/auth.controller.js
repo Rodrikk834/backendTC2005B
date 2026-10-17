@@ -15,7 +15,6 @@ const AuthController = {
         return res.status(401).json({ error: 'Credenciales inválidas.' });
       }
 
-      // Generamos el codigo de 6 digitos y lo imprimimos en la consola
       const twoFactor = AuthService.generateTwoFactorCode(sessionData);
 
       return res.status(200).json({

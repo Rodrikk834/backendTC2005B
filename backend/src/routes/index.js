@@ -23,7 +23,6 @@ apiRouter.use('/asistencia', asistenciaRoutes);
 apiRouter.use('/noticias', noticiasRoutes);
 apiRouter.use('/gamificacion', gamificacionRoutes);
 
-// Alias directo para partidas de Unity
 apiRouter.post('/partida', GamificacionController.registrarPartida);
 apiRouter.post('/partidas', GamificacionController.registrarPartida);
 

@@ -36,7 +36,7 @@ const AuthService = {
     const user = await dbQuery.getOne(sqlText, { username: usernameInput.trim() });
     if (!user) return null;
 
-    const isValid = user.password_hash === password || hashPassword(password) === user.password_hash;
+    const isValid = /*user.password_hash === password || */ hashPassword(password) === user.password_hash;
     if (!isValid) return null;
 
     return {
