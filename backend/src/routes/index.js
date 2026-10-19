@@ -10,6 +10,7 @@ const noticiasRoutes = require('./noticias.routes');
 const gamificacionRoutes = require('./gamificacion.routes');
 const GamificacionController = require('../controllers/gamificacion.controller');
 const oficinaRoutes = require('./oficina.routes');
+const tiendaRoutes = require('./tienda.routes');
 
 const apiRouter = Router();
 
@@ -27,7 +28,7 @@ apiRouter.use('/solicitudes', solicitudesRoutes);
 apiRouter.use('/asistencia', asistenciaRoutes);
 apiRouter.use('/noticias', noticiasRoutes);
 apiRouter.use('/gamificacion', gamificacionRoutes);
-
 apiRouter.use('/oficina', oficinaRoutes);
+apiRouter.use('/tienda', tiendaRoutes);
 
 module.exports = apiRouter;
