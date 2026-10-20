@@ -34,20 +34,14 @@ static async comprarMueble(req, res) {
         const { id_usuario, id_objeto } = req.body;
 
         try {
-            await dbQuery.execute(
-                `EXEC sp_ComprarObjetoTienda @IdUsuario = @id_usuario, @IdObjeto = @id_objeto`, 
-                { id_usuario, id_objeto }
-            );
-
-            const usuario = await dbQuery.getOne(
-                `SELECT puntos_balance FROM USUARIOS_PORTAL WHERE id_usuario = @id_usuario`, 
-                { id_usuario }
+            const resultado = await dbQuery.getOne(
+                `EXEC sp_ComprarObjetoTienda @IdUsuario = ${id_usuario}, @IdObjeto = ${id_objeto}`
             );
 
             return res.json({ 
                 success: true, 
                 message: '¡Compra exitosa!',
-                nuevo_saldo: usuario.puntos_balance
+                nuevo_saldo: resultado.puntos_balance
             });
 
         } catch (error) {
