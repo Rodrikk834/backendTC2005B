@@ -31,6 +31,23 @@ Content-Type: application/json
   "password": "password789"
 }
 
+### 1.4 Verificar Código 2FA Recibido por Correo
+POST {{baseUrl}}/verify-2fa
+Content-Type: application/json
+
+{
+  "userId": 5,
+  "code": "123456"
+}
+
+### 1.5 Reenviar Código 2FA por Correo
+POST {{baseUrl}}/resend-2fa
+Content-Type: application/json
+
+{
+  "userId": 5
+}
+
 
 ### ==========================================
 ### 2. PERFIL DE EMPLEADO (/api/perfil)

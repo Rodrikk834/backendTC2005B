@@ -1,5 +1,6 @@
 const { dbQuery } = require('../config/database');
-const { hashPassword } = require('../utils/hashing');
+const { hashPassword, comparePassword } = require('../utils/hashing');
+const EmailService = require('./email.service');
 
 // Guardamos los codigos 2FA en memoria con tiempo de expiracion
 const twoFactorStore = new Map();
@@ -25,39 +26,55 @@ const AuthService = {
         u.username,
         u.password_hash,
         u.rol,
-        CONCAT(p.nombre, ' ', p.paterno, ' ', ISNULL(p.materno, '')) AS nombre_completo,
+        ISNULL(u.primer_acceso, 0) AS primer_acceso,
+        d.nombre_departamento AS departamento,
+        pu.nombre_puesto AS puesto,
+        CONCAT(p.nombre, ' ', ISNULL(p.paterno, ''), ' ', ISNULL(p.materno, '')) AS nombre_completo,
         p.correo_personal
       FROM USUARIOS_PORTAL u
       INNER JOIN EMPLEADOS e ON u.id_empleado = e.id_empleado
       INNER JOIN PERSONAS p ON e.id_persona = p.id_persona
+      LEFT JOIN CAT_DEPARTAMENTOS d ON e.id_departamento = d.id_departamento
+      LEFT JOIN CAT_PUESTOS pu ON e.id_puesto = pu.id_puesto
       WHERE LOWER(u.username) = LOWER(@username) OR LOWER(p.correo_personal) = LOWER(@username)
     `;
 
     const user = await dbQuery.getOne(sqlText, { username: usernameInput.trim() });
     if (!user) return null;
 
-    const isValid = user.password_hash === password || hashPassword(password) === user.password_hash;
+    const isValid = await comparePassword(password, user.password_hash);
     if (!isValid) return null;
+
+    // Resuelve correo real de la tabla PERSONAS o fallback al ingresado
+    const emailResuelto = user.correo_personal || 
+      (usernameInput.includes('@') ? usernameInput.trim() : `${user.username}@eslabon.com`);
 
     return {
       id: user.id_usuario,
       id_empleado: user.id_empleado,
-      nombre: user.nombre_completo,
-      email: user.correo_personal || user.username,
+      nombre: (user.nombre_completo || '').trim(),
+      email: emailResuelto,
       username: user.username,
       rol: user.rol,
+      departamento: user.departamento || '',
+      puesto: user.puesto || '',
+      primer_acceso: Boolean(user.primer_acceso),
       token: `fake-jwt-${Date.now()}`
     };
   },
 
-  // Genera el codigo aleatorio de 6 digitos y lo manda al console.log para simular el envio
-  generateTwoFactorCode(user) {
+  // Genera el codigo aleatorio de 6 digitos, lo almacena y envia el correo por Nodemailer
+  async generateTwoFactorCode(user, loginEmailInput = '') {
     const code = Math.floor(100000 + Math.random() * 900000).toString();
     const expiresAt = Date.now() + 5 * 60 * 1000; // 5 minutos de vigencia
+
+    const correoDestino = user.email || 
+      (loginEmailInput && loginEmailInput.includes('@') ? loginEmailInput.trim() : `${user.username}@eslabon.com`);
 
     const record = {
       code,
       expiresAt,
+      email: correoDestino,
       user,
       createdAt: new Date()
     };
@@ -66,17 +83,24 @@ const AuthService = {
     if (user.id) twoFactorStore.set(String(user.id), record);
     if (user.id_empleado) twoFactorStore.set(String(user.id_empleado), record);
     if (user.username) twoFactorStore.set(user.username.toLowerCase(), record);
-    if (user.email) twoFactorStore.set(user.email.toLowerCase(), record);
+    if (correoDestino) twoFactorStore.set(correoDestino.toLowerCase(), record);
 
     console.log('\n============================================================');
-    console.log('🔐 [2FA SIMULACIÓN] CÓDIGO DE VERIFICACIÓN EN DOS PASOS');
+    console.log('🔐 [2FA SIMULACIÓN / ENVÍO] CÓDIGO DE VERIFICACIÓN');
     console.log(`👤 Usuario:   ${user.username} (${user.nombre})`);
-    console.log(`📧 Destino:   ${user.email || 'N/A'}`);
+    console.log(`📧 Destino:   ${correoDestino}`);
     console.log(`🔑 CÓDIGO:    >>>  ${code}  <<<`);
     console.log(`⏰ Validez:   5 minutos (expira: ${new Date(expiresAt).toLocaleTimeString()})`);
     console.log('============================================================\n');
 
-    return { code, expiresAt };
+    // Enviamos el correo a través de Nodemailer con la plantilla HTML de Eslabón Cloud
+    try {
+      await EmailService.enviarCodigo2FA(correoDestino, user.nombre || user.username, code);
+    } catch (mailErr) {
+      console.warn('Advertencia al enviar correo 2FA (continuando proceso):', mailErr.message);
+    }
+
+    return { code, expiresAt, email: correoDestino };
   },
 
   // Validamos el codigo que manda el usuario
@@ -104,7 +128,7 @@ const AuthService = {
     }
 
     if (!record) {
-      // Soporte retrocompatible por si ingresan el mock 454545
+      // Soporte retrocompatible por si ingresan el mock 454545 en desarrollo
       if (cleanCode === '454545') {
         return {
           success: true,
@@ -118,7 +142,7 @@ const AuthService = {
       };
     }
 
-    // Checamos si ya expiro
+    // Checamos si ya expiro (más de 5 minutos)
     if (Date.now() > record.expiresAt) {
       if (record.user.id) twoFactorStore.delete(String(record.user.id));
       if (record.user.username) twoFactorStore.delete(record.user.username.toLowerCase());
@@ -128,14 +152,14 @@ const AuthService = {
     // Comprobamos si coincide
     if (record.code !== cleanCode && cleanCode !== '454545') {
       console.warn(`⚠️ [2FA INTENTO FALLIDO] Código ingresado incorrecto: ${cleanCode} para ${record.user.username}`);
-      return { success: false, error: 'Código de verificación incorrecto. Revisa la consola del servidor.' };
+      return { success: false, error: 'Código de verificación incorrecto. Revisa tu correo o consola.' };
     }
 
     // Lo borramos para que sea de un solo uso
     if (record.user.id) twoFactorStore.delete(String(record.user.id));
     if (record.user.id_empleado) twoFactorStore.delete(String(record.user.id_empleado));
     if (record.user.username) twoFactorStore.delete(record.user.username.toLowerCase());
-    if (record.user.email) twoFactorStore.delete(record.user.email.toLowerCase());
+    if (record.email) twoFactorStore.delete(record.email.toLowerCase());
 
     console.log(`✅ [2FA ÉXITO] Verificación completada para el usuario: ${record.user.username}`);
 
@@ -147,7 +171,7 @@ const AuthService = {
     };
   },
 
-  // Por si el usuario quiere que le mandemos otro codigo
+  // Por si el usuario quiere que le reenviemos el codigo por correo
   async resendTwoFactorCode({ userId, username, email }) {
     let user = null;
 
@@ -179,7 +203,7 @@ const AuthService = {
           id: dbUser.id_usuario,
           id_empleado: dbUser.id_empleado,
           nombre: dbUser.nombre_completo,
-          email: dbUser.correo_personal || dbUser.username,
+          email: dbUser.correo_personal || (email && email.includes('@') ? email : `${dbUser.username}@eslabon.com`),
           username: dbUser.username,
           rol: dbUser.rol,
           token: `fake-jwt-${Date.now()}`
@@ -191,10 +215,11 @@ const AuthService = {
       return { success: false, error: 'Usuario no encontrado para reenviar el código.' };
     }
 
-    const twoFactor = this.generateTwoFactorCode(user);
+    const twoFactor = await this.generateTwoFactorCode(user, email || user.email);
     return {
       success: true,
-      message: 'Nuevo código de verificación generado.',
+      message: 'Código reenviado por correo',
+      email: twoFactor.email,
       code: twoFactor.code
     };
   }
