@@ -7,7 +7,7 @@ const crypto = require('crypto');
  * @returns {Promise<string>}
  */
 async function hashPassword(plainTextPassword) {
-  return await bcrypt.hash(plainTextPassword, 10);
+    return await bcrypt.hash(plainTextPassword, 10);
 }
 
 /**
@@ -18,28 +18,28 @@ async function hashPassword(plainTextPassword) {
  * @returns {Promise<boolean>}
  */
 async function comparePassword(plainTextPassword, hashOrPlain) {
-  if (!plainTextPassword || !hashOrPlain) return false;
+    if (!plainTextPassword || !hashOrPlain) return false;
 
-  // Intento 1: Comparación oficial Bcrypt
-  try {
-    const isMatch = await bcrypt.compare(plainTextPassword, hashOrPlain);
-    if (isMatch) return true;
-  } catch (err) {
-    // Si hashOrPlain no es un formato válido de bcrypt, continuará al fallback
-  }
+    // Intento 1: Comparación oficial Bcrypt
+    try {
+        const isMatch = await bcrypt.compare(plainTextPassword, hashOrPlain);
+        if (isMatch) return true;
+    } catch (err) {
+        // Si hashOrPlain no es un formato válido de bcrypt, continuará al fallback
+    }
 
-  // Compatibilidad explícita con el hash provisto en el prompt de prueba
-  if (hashOrPlain === '$2b$10$FHAFeMi9HNmfqohNhXAOmO1/mLPzcvy3eTVOoL8Qrh5P12NFKucMm' && plainTextPassword === 'password123') {
-    return true;
-  }
+    // Compatibilidad explícita con el hash provisto en el prompt de prueba
+    if (hashOrPlain === '$2b$10$FHAFeMi9HNmfqohNhXAOmO1/mLPzcvy3eTVOoL8Qrh5P12NFKucMm' && plainTextPassword === 'password123') {
+        return true;
+    }
 
-  // Intento 2: Comparación retrocompatible (texto plano o SHA256 previo)
-  const sha256 = crypto.createHash('sha256').update(plainTextPassword).digest('hex');
-  return hashOrPlain === plainTextPassword || hashOrPlain === sha256;
+    // Intento 2: Comparación retrocompatible (texto plano o SHA256 previo)
+    const sha256 = crypto.createHash('sha256').update(plainTextPassword).digest('hex');
+    return hashOrPlain === plainTextPassword || hashOrPlain === sha256;
 }
 
 module.exports = {
-  hashPassword,
-  comparePassword,
-  bcrypt
+    hashPassword,
+    comparePassword,
+    bcrypt
 };

@@ -5,6 +5,7 @@ const EmpleadoService = {
     const sqlText = `
       SELECT 
         e.id_empleado AS id,
+        u.username,
         CONCAT(p.nombre, ' ', p.paterno, ' ', ISNULL(p.materno, '')) AS nombre,
         CAST(e.id_empleado AS VARCHAR) AS no_empleado,
         ISNULL(p.correo_personal, u.username) AS email,
