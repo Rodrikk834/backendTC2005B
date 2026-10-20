@@ -13,6 +13,7 @@ const colaboradoresRoutes = require('./colaboradores.routes');
 const ColaboradoresController = require('../controllers/colaboradores.controller');
 const oficinaRoutes = require('./oficina.routes');
 const tiendaRoutes = require('./tienda.routes');
+const empresaRoutes = require('./empresa.routes');
 
 const apiRouter = Router();
 
@@ -23,6 +24,7 @@ apiRouter.post('/partida', GamificacionController.registrarPartida);
 apiRouter.post('/partidas', GamificacionController.registrarPartida);
 
 apiRouter.use('/auth', authRoutes);
+apiRouter.use('/empresa', empresaRoutes);
 apiRouter.use('/colaboradores', colaboradoresRoutes);
 apiRouter.post('/completar-registro', ColaboradoresController.completarRegistro);
 apiRouter.use('/perfil', empleadoRoutes);

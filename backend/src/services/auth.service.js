@@ -27,6 +27,15 @@ const AuthService = {
         u.password_hash,
         u.rol,
         ISNULL(u.primer_acceso, 0) AS primer_acceso,
+        ISNULL(e.id_empresa, ISNULL(e.id_compania, 1)) AS id_empresa,
+        ISNULL(emp.nombre_empresa, 'ATLAS SOLUTIONS S.A. DE C.V.') AS empresa,
+        ISNULL(emp.nombre_corto, 'Atlas Solutions') AS shortName,
+        emp.logo_url,
+        emp.color_primario_dark,
+        emp.color_primario_light,
+        emp.color_acento,
+        emp.color_acento_light,
+        emp.preset_nombre,
         d.nombre_departamento AS departamento,
         pu.nombre_puesto AS puesto,
         CONCAT(p.nombre, ' ', ISNULL(p.paterno, ''), ' ', ISNULL(p.materno, '')) AS nombre_completo,
@@ -34,6 +43,7 @@ const AuthService = {
       FROM USUARIOS_PORTAL u
       INNER JOIN EMPLEADOS e ON u.id_empleado = e.id_empleado
       INNER JOIN PERSONAS p ON e.id_persona = p.id_persona
+      LEFT JOIN EMPRESAS emp ON ISNULL(e.id_empresa, e.id_compania) = emp.id_empresa
       LEFT JOIN CAT_DEPARTAMENTOS d ON e.id_departamento = d.id_departamento
       LEFT JOIN CAT_PUESTOS pu ON e.id_puesto = pu.id_puesto
       WHERE LOWER(u.username) = LOWER(@username) OR LOWER(p.correo_personal) = LOWER(@username)
@@ -49,9 +59,25 @@ const AuthService = {
         const emailResuelto = user.correo_personal ||
             (usernameInput.includes('@') ? usernameInput.trim() : `${user.username}@eslabon.com`);
 
+        const branding = {
+            empresaId: user.id_empresa || 1,
+            companyName: user.empresa || 'Atlas Solutions',
+            shortName: user.shortName || 'Atlas Solutions',
+            logoUrl: user.logo_url || '/assets/favicon/favicon.svg',
+            primaryDark: user.color_primario_dark || '#1A365D',
+            primaryLight: user.color_primario_light || '#2B6CB0',
+            accentColor: user.color_acento || '#00B894',
+            accentLight: user.color_acento_light || '#E6F8F5',
+            presetName: user.preset_nombre || 'atlas'
+        };
+
         return {
             id: user.id_usuario,
+            id_usuario: user.id_usuario,
             id_empleado: user.id_empleado,
+            id_empresa: user.id_empresa || 1,
+            empresa: user.empresa || 'Atlas Solutions',
+            branding,
             nombre: (user.nombre_completo || '').trim(),
             email: emailResuelto,
             username: user.username,
@@ -59,7 +85,7 @@ const AuthService = {
             departamento: user.departamento || '',
             puesto: user.puesto || '',
             primer_acceso: Boolean(user.primer_acceso),
-            token: `fake-jwt-${Date.now()}`
+            token: `jwt-user-${user.id_usuario}-emp-${user.id_empresa || 1}-${Date.now()}`
         };
     },
 
@@ -132,7 +158,7 @@ const AuthService = {
             if (cleanCode === '454545') {
                 return {
                     success: true,
-                    user: { id: userId || 1, username: username || 'usuario', rol: 'Colaborador' },
+                    user: { id: userId || 1, username: username || 'usuario', rol: 'Colaborador', id_empresa: 1, empresa: 'Atlas Solutions' },
                     token: `fake-jwt-2fa-${Date.now()}`
                 };
             }
@@ -187,11 +213,21 @@ const AuthService = {
           u.id_empleado,
           u.username,
           u.rol,
+          ISNULL(e.id_empresa, ISNULL(e.id_compania, 1)) AS id_empresa,
+          ISNULL(emp.nombre_empresa, 'ATLAS SOLUTIONS S.A. DE C.V.') AS empresa,
+          ISNULL(emp.nombre_corto, 'Atlas Solutions') AS shortName,
+          emp.logo_url,
+          emp.color_primario_dark,
+          emp.color_primario_light,
+          emp.color_acento,
+          emp.color_acento_light,
+          emp.preset_nombre,
           CONCAT(p.nombre, ' ', p.paterno, ' ', ISNULL(p.materno, '')) AS nombre_completo,
           p.correo_personal
         FROM USUARIOS_PORTAL u
         INNER JOIN EMPLEADOS e ON u.id_empleado = e.id_empleado
         INNER JOIN PERSONAS p ON e.id_persona = p.id_persona
+        LEFT JOIN EMPRESAS emp ON ISNULL(e.id_empresa, e.id_compania) = emp.id_empresa
         WHERE u.id_usuario = @id OR LOWER(u.username) = LOWER(@term) OR LOWER(p.correo_personal) = LOWER(@term)
       `;
             const dbUser = await dbQuery.getOne(sqlText, {
@@ -202,6 +238,8 @@ const AuthService = {
                 user = {
                     id: dbUser.id_usuario,
                     id_empleado: dbUser.id_empleado,
+                    id_empresa: dbUser.id_empresa || 1,
+                    empresa: dbUser.empresa || 'Atlas Solutions',
                     nombre: dbUser.nombre_completo,
                     email: dbUser.correo_personal || (email && email.includes('@') ? email : `${dbUser.username}@eslabon.com`),
                     username: dbUser.username,
