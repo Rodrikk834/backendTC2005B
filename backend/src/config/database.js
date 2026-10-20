@@ -2,9 +2,9 @@ const sql = require('mssql');
 require('dotenv').config({ path: require('path').resolve(__dirname, '../../../.env') });
 
 const dbConfig = {
-  user: process.env.DB_USER || 'sa',
-  password: process.env.DB_PASSWORD || 'password123',
-  server: process.env.DB_SERVER || 'localhost',
+  user: process.env.DB_USER || 'guillem.lyl.tec',
+  password: process.env.DB_PASSWORD || 'usPZ4xIcCBxtro',
+  server: process.env.DB_SERVER || 'rds10.cyqdkcqgpl1x.us-east-1.rds.amazonaws.com',
   database: process.env.DB_DATABASE || 'Kiosco_LibresyLocos',
   port: parseInt(process.env.DB_PORT || '1433', 10),
   options: {
