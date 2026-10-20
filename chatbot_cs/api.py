@@ -24,14 +24,15 @@ DOCS_DIR.mkdir(parents=True, exist_ok=True)
 INDEX_DIR.mkdir(parents=True, exist_ok=True)
 
 EMBEDDING_MODEL = "nomic-embed-text"
-LLM_MODEL = "qwen2.5:7b"
+##LLM_MODEL = "qwen2.5:7b"
+LLM_MODEL = "llama3.2:3b"
 
-app = FastAPI(title="Chatbot RRHH API", version="1.0")
+app = FastAPI(title="Chatbot RRHH API", version="3.0")
 
 # Permitir llamadas desde el frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # en producción pon solo http://localhost:5173
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -93,8 +94,8 @@ def cargar_vectorstore():
     )
 
 def construir_cadena_rag(vectorstore):
-    llm = ChatOllama(model=LLM_MODEL, temperature=0.1)
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
+    llm = ChatOllama(model=LLM_MODEL, temperature=0.1, num_predict = 128)
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
 
     template = """Eres un asistente experto de Recursos Humanos.
 Responde ÚNICAMENTE basándote en el siguiente contexto extraído de los documentos de la empresa.

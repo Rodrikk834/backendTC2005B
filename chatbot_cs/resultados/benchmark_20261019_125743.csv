@@ -1,0 +1,701 @@
+modelo,temperature,k,num_predict,pregunta,repeticion,latencia_seg,respuesta,error
+llama3.2:3b,0.0,1,256,¿Cuántos días de vacaciones me corresponden al año?,1,12.78,"Según la política para vacaciones, permisos y días festivos, no se establece un límite específico de días de vacaciones que se correspondan al año. Sin embargo, se menciona que la prima vacacional se pagará en el período correspondiente, con el objeto de que la Unidad de Negocio erogue los beneficios en el año en que se genera el derecho a las vacaciones.
+
+No se proporciona información clara sobre el número de días de vacaciones que se corresponden al año. Es posible que se deba consultar con el",
+llama3.2:3b,0.0,1,256,¿Cuántos días de vacaciones me corresponden al año?,2,9.147,"Según la política para vacaciones, permisos y días festivos, no se establece un límite específico de días de vacaciones que se correspondan al año. Sin embargo, se menciona que la prima vacacional se pagará en el período correspondiente, con el objeto de que la Unidad de Negocio erogue los beneficios en el año en que se genera el derecho a las vacaciones.
+
+No se proporciona información clara sobre cuántos días de vacaciones se corresponden al año, por lo que no puedo proporcionar una respuesta p",
+llama3.2:3b,0.0,1,256,¿Cómo solicito un permiso de ausencia?,1,19.003,"Según nuestra política de ausencias, para solicitar un permiso de ausencia, los empleados deben seguir los siguientes pasos:
+
+1. Utilizar el formato establecido por la empresa para solicitar un permiso de ausencia.
+2. Presentar la solicitud de permiso de ausencia a su supervisor inmediato.
+3. Obtener el aprobación del supervisor inmediato y de la gerencia.
+
+Es importante recordar que los permisos de ausencia deben ser solicitados con anticipación y que la empresa se reserva el derecho de negar u",
+llama3.2:3b,0.0,1,256,¿Cómo solicito un permiso de ausencia?,2,13.374,"Según nuestra política de ausencias, para solicitar un permiso de ausencia, los empleados deben seguir los siguientes pasos:
+
+1. Utilizar el formato establecido por la empresa para solicitar un permiso de ausencia.
+2. Presentar la solicitud de permiso de ausencia a su supervisor inmediato.
+3. Obtener el aprobación del supervisor inmediato y de la gerencia.
+
+Es importante recordar que los permisos de ausencia deben ser solicitados con anticipación y que la empresa se reserva el derecho de negar u",
+llama3.2:3b,0.0,1,256,¿Cuál es el horario laboral de la empresa?,1,13.315,"No tengo información específica sobre el horario laboral de la empresa en los documentos disponibles. Sin embargo, puedo proporcionar información general basada en las definiciones proporcionadas en la política de horas de trabajo.
+
+Según la política de horas de trabajo, el horario ordinario se refiere al ""Periodo de trabajado establecido en el contrato laboral"". Sin embargo, no se proporciona información específica sobre el horario laboral de la empresa en este documento.
+
+Si deseas obtener inf",
+llama3.2:3b,0.0,1,256,¿Cuál es el horario laboral de la empresa?,2,11.461,"No tengo información específica sobre el horario laboral de la empresa en los documentos disponibles. Sin embargo, puedo proporcionar una definición de ""Horario Ordinario"" según la política de horas de trabajo de la empresa, que se encuentra en la página 2 del documento ""Politica_de_Horas_de_Trabajo.pdf"".
+
+Según esta definición, el Horario Ordinario se refiere al ""Periodo de trabajado establecido en el contrato laboral"". Esto sugiere que el horario laboral de la empresa puede variar dependiendo ",
+llama3.2:3b,0.0,1,256,¿Qué documentos necesito para solicitar vacaciones?,1,14.611,"Según el documento ""vacaciones.pdf"" (Página: 0), para solicitar vacaciones, el empleado necesitará comunicar el programa de vacaciones con el Gerente de la Unidad de Negocio, quien a su vez lo notificará al Gerente de la Matriz y al Gerente Administrativo de la Matriz, con anticipación.
+
+No se menciona explícitamente en el documento qué documentos específicos son necesarios para solicitar vacaciones, pero se sugiere que el empleado debe comunicar el programa de vacaciones a su Jefe Inmediato y a",
+llama3.2:3b,0.0,1,256,¿Qué documentos necesito para solicitar vacaciones?,2,10.178,"Según el documento ""vacaciones.pdf"" (Página: 0), para solicitar vacaciones, el empleado necesitará comunicar el programa de vacaciones con el Gerente de la Unidad de Negocio, quien a su vez lo notificará al Gerente de la Matriz y al Gerente Administrativo de la Matriz, con anticipación.
+
+No se menciona específicamente los documentos que el empleado debe presentar para solicitar vacaciones, pero se sugiere que debe comunicarse con el Gerente de la Unidad de Negocio para discutir y acordar el prog",
+llama3.2:3b,0.0,1,256,¿A quién debo contactar si tengo dudas de nómina?,1,12.174,"Según el documento ""vacaciones.pdf"" (Página: 1), si tienes dudas sobre la nómina, debes contactar a la persona responsable de la gestión de la nómina de la empresa. Sin embargo, no se menciona explícitamente a quién debes contactar.
+
+Puedes intentar contactar a la persona responsable de la gestión de la nómina, como el gerente de recursos humanos o el departamento de personal, para obtener más información y resolver cualquier duda que tengas sobre tu pago de nómina.",
+llama3.2:3b,0.0,1,256,¿A quién debo contactar si tengo dudas de nómina?,2,12.108,"Según el documento ""vacaciones.pdf"" (Página: 1), si tienes dudas sobre la nómina, debes contactar a la persona responsable de la gestión de la nómina de la empresa. Sin embargo, no se menciona explícitamente a quién debes contactar.
+
+Puedes intentar contactar a la Sección de Recursos Humanos o a la persona responsable de la gestión de la nómina, pero no se proporciona información específica sobre quién es la persona a la que debes dirigirte.
+
+Si necesitas más información o ayuda, te recomiendo c",
+llama3.2:3b,0.0,2,256,¿Cuántos días de vacaciones me corresponden al año?,1,22.143,"Según la política de vacaciones de la empresa, el número de días de vacaciones que corresponde al empleado al año se determina según el programa de vacaciones que se formula con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio.
+
+No se establece un número fijo de días de vacaciones que corresponda al empleado al año, sino que se deja la decisión a la discusión y acuerdo entre el empleado, su Jefe Inmediato y el Gerente de la Unidad de Negocio, teniendo en cuenta las ",
+llama3.2:3b,0.0,2,256,¿Cuántos días de vacaciones me corresponden al año?,2,17.578,"Según la política de vacaciones de la empresa, el número de días de vacaciones que corresponde al empleado al año se determina según el programa de vacaciones que se formula con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio.
+
+No se establece un número fijo de días de vacaciones que corresponda al empleado al año, sino que se deja la decisión a la discusión y acuerdo entre el empleado, su Jefe Inmediato y el Gerente de la Unidad de Negocio, teniendo en cuenta las ",
+llama3.2:3b,0.0,2,256,¿Cómo solicito un permiso de ausencia?,1,7.293,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Deben presentar su solicitud al supervisor inmediato y, posteriormente, al supervisor inmediato y a la gerencia para obtener su aprobación.",
+llama3.2:3b,0.0,2,256,¿Cómo solicito un permiso de ausencia?,2,4.927,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Deben presentar su solicitud al supervisor inmediato y, posteriormente, al supervisor inmediato y a la gerencia para obtener aprobación.",
+llama3.2:3b,0.0,2,256,¿Cuál es el horario laboral de la empresa?,1,10.668,"Según la política de horas de trabajo de la empresa, el horario laboral es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.
+
+Fuente: Politica_de_Horas_de_Trabajo.pdf | Página: 3.",
+llama3.2:3b,0.0,2,256,¿Cuál es el horario laboral de la empresa?,2,5.309,"Según la política de horas de trabajo de la empresa, el horario laboral es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.
+
+Fuente: Politica_de_Horas_de_Trabajo.pdf | Página: 3.",
+llama3.2:3b,0.0,2,256,¿Qué documentos necesito para solicitar vacaciones?,1,18.242,"Según el documento ""vacaciones.pdf"" (Página: 0), no se menciona explícitamente qué documentos son necesarios para solicitar vacaciones. Sin embargo, se indica que el programa de vacaciones se disfrazará de conformidad con el programa que se formule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio.
+
+En otras palabras, es probable que el empleado necesite solicitar la autorización del Jefe Inmediato y del Gerente de la Unidad de Negocio para programar sus vacacion",
+llama3.2:3b,0.0,2,256,¿Qué documentos necesito para solicitar vacaciones?,2,9.634,"Según el documento ""vacaciones.pdf"" (Página: 0), no se menciona explícitamente qué documentos son necesarios para solicitar vacaciones. Sin embargo, se indica que el programa de vacaciones se debe comunicar con anticipación al Gerente de la Matriz y al Gerente Administrativo de la Matriz, y que se debe obtener la autorización del Gerente de la Unidad de Negocio.
+
+En otras palabras, aunque no se menciona específicamente los documentos necesarios, se sugiere que el empleado debe comunicar su progr",
+llama3.2:3b,0.0,2,256,¿A quién debo contactar si tengo dudas de nómina?,1,8.456,"Según el documento vacaciones.pdf, página 1, si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia de la Matriz o a la Gerencia Administrativa de la Matriz.",
+llama3.2:3b,0.0,2,256,¿A quién debo contactar si tengo dudas de nómina?,2,3.311,"Según el documento vacaciones.pdf, página 1, si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia de la Matriz o a la Gerencia Administrativa de la Matriz.",
+llama3.2:3b,0.0,3,256,¿Cuántos días de vacaciones me corresponden al año?,1,17.016,"Según la política de vacaciones de la empresa, los colaboradores tienen derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios y en forma subsiguiente cada aniversario, a partir de su fecha de ingreso.
+
+En este caso, no se especifica cuántos días de vacaciones corresponden al año, pero se menciona que los días de vacaciones se darán a conocer por la Gerencia de Unidad de Negocio previamente autorizado por la Gerencia de Matriz, según la Ley Federal de Trabajo y/",
+llama3.2:3b,0.0,3,256,¿Cuántos días de vacaciones me corresponden al año?,2,17.802,"Según la política de vacaciones de la empresa, los colaboradores tienen derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios y en forma subsiguiente cada aniversario, a partir de su fecha de ingreso.
+
+En este caso, no se especifica la cantidad de días de vacaciones que corresponde al empleado al año, pero se menciona que los días de vacaciones se darán a conocer previamente autorizados por la Gerencia de Unidad de Negocio, según las necesidades de trabajo y de",
+llama3.2:3b,0.0,3,256,¿Cómo solicito un permiso de ausencia?,1,10.591,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Deben presentar la solicitud a su supervisor inmediato, quien a su vez la remitirá a la gerencia para su aprobación.",
+llama3.2:3b,0.0,3,256,¿Cómo solicito un permiso de ausencia?,2,4.995,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Deben presentar la solicitud a su supervisor inmediato, quien a su vez la remitirá a la gerencia para su aprobación.",
+llama3.2:3b,0.0,3,256,¿Cuál es el horario laboral de la empresa?,1,10.52,"Según la política de horas de trabajo de la empresa, el horario laboral es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.
+
+Fuente: Politica_de_Horas_de_Trabajo.pdf | Página: 3.",
+llama3.2:3b,0.0,3,256,¿Cuál es el horario laboral de la empresa?,2,5.676,"Según la política de horas de trabajo de la empresa, el horario laboral es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.
+
+Fuente: Politica_de_Horas_de_Trabajo.pdf | Página: 3.",
+llama3.2:3b,0.0,3,256,¿Qué documentos necesito para solicitar vacaciones?,1,16.878,"Según la política de vacaciones de GRUPO PROMESSA, para solicitar vacaciones, es necesario comunicar el programa con el Jefe Inmediato y obtener la autorización del Gerente de la Unidad de Negocio, previa comunicación con el Gerente de la Matriz y el Gerente Administrativo de la Matriz.
+
+No se menciona específicamente un documento que deba ser presentado para solicitar vacaciones, pero se indica que el programa debe ser comunicado con anticipación al Gerente de la Matriz y al Gerente Administrat",
+llama3.2:3b,0.0,3,256,¿Qué documentos necesito para solicitar vacaciones?,2,12.226,"Según la política de vacaciones de GRUPO PROMESSA, para solicitar vacaciones, es necesario comunicar el programa con el Jefe Inmediato y obtener la autorización del Gerente de la Unidad de Negocio, previa comunicación con el Gerente de la Matriz y el Gerente Administrativo de la Matriz.
+
+No se menciona específicamente qué documentos se requieren para solicitar vacaciones, pero se sugiere que el colaborador debe comunicar el programa con sus superiores y obtener su aprobación.
+
+Es importante tene",
+llama3.2:3b,0.0,3,256,¿A quién debo contactar si tengo dudas de nómina?,1,8.208,"Según el documento ""vacaciones.pdf"" (Página: 1), si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia Administrativa de la Matriz.",
+llama3.2:3b,0.0,3,256,¿A quién debo contactar si tengo dudas de nómina?,2,3.114,"Según el documento ""vacaciones.pdf"" (Página: 1), si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia Administrativa de la Matriz.",
+llama3.2:3b,0.1,1,256,¿Cuántos días de vacaciones me corresponden al año?,1,13.357,"Según la política para vacaciones, permisos y días festivos, no se establece un límite específico de días de vacaciones que se correspondan al año. Sin embargo, se menciona que la prima vacacional se pagará en el período correspondiente, con el objeto de que la Unidad de Negocio erogue los beneficios en el año en que se genera el derecho a las vacaciones.
+
+En otras palabras, no se especifica cuántos días de vacaciones se corresponden al año, pero se garantiza que la prima vacacional se pagará en",
+llama3.2:3b,0.1,1,256,¿Cuántos días de vacaciones me corresponden al año?,2,11.247,"Según la política de vacaciones, permisos y días festivos, no se establece un límite específico de días de vacaciones que se correspondan al año. Sin embargo, se menciona que la prima vacacional se pagará en el período correspondiente, con el objeto de que la Unidad de Negocio erogue los beneficios en el año en que se genera el derecho a las vacaciones.
+
+En otras palabras, no se especifica cuántos días de vacaciones se corresponden al año, pero se garantiza que la prima vacacional se pagará en e",
+llama3.2:3b,0.1,1,256,¿Cómo solicito un permiso de ausencia?,1,12.222,"Según la política de ausencias de nuestra empresa, para solicitar un permiso de ausencia, los empleados deben seguir los siguientes pasos:
+
+1. Utilizar el formato establecido por la empresa para solicitar un permiso de ausencia.
+2. Presentar la solicitud de permiso de ausencia a su supervisor inmediato.
+3. Obtener el aprobación del supervisor inmediato y de la gerencia.
+
+Es importante recordar que los permisos de ausencia deben ser solicitados con anticipación y que la empresa se reserva el dere",
+llama3.2:3b,0.1,1,256,¿Cómo solicito un permiso de ausencia?,2,11.133,"Según la política de ausencias de nuestra empresa, para solicitar un permiso de ausencia, el empleado debe seguir los siguientes pasos:
+
+1. Utilizar el formato establecido por la empresa para solicitar un permiso de ausencia.
+2. Presentar la solicitud al supervisor inmediato.
+3. Obtener el aprobación del supervisor inmediato y de la gerencia.
+
+Es importante recordar que los permisos de ausencia deben ser solicitados con anticipación y que la empresa se reserva el derecho de negar un permiso de a",
+llama3.2:3b,0.1,1,256,¿Cuál es el horario laboral de la empresa?,1,6.204,"Según la política de horas de trabajo de la empresa, el horario ordinario no se define explícitamente en el documento proporcionado. Sin embargo, se menciona que el horario ordinario está establecido en el contrato laboral.
+
+No se proporciona información específica sobre el horario laboral de la empresa en el documento ""Política de Horas de Trabajo.pdf"".",
+llama3.2:3b,0.1,1,256,¿Cuál es el horario laboral de la empresa?,2,5.532,"Según la política de horas de trabajo de la empresa, el horario ordinario no se define explícitamente en el documento proporcionado. Sin embargo, se menciona que el horario ordinario está establecido en el contrato laboral.
+
+No se proporciona información sobre el horario laboral específico de la empresa en el documento ""Politica_de_Horas_de_Trabajo.pdf"".",
+llama3.2:3b,0.1,1,256,¿Qué documentos necesito para solicitar vacaciones?,1,9.318,"Según el documento ""vacaciones.pdf"" (Página: 0), para solicitar vacaciones, el empleado debe comunicar el programa de vacaciones con el Gerente de la Unidad de Negocio, quien a su vez notificará al Gerente de la Matriz y al Gerente Administrativo de la Matriz con anticipación.
+
+No se menciona explícitamente los documentos específicos que se requieren para solicitar vacaciones, pero se sugiere que el empleado debe comunicarse con el Gerente de la Unidad de Negocio para discutir y acordar el progr",
+llama3.2:3b,0.1,1,256,¿Qué documentos necesito para solicitar vacaciones?,2,8.722,"Según el documento ""vacaciones.pdf"" (Página: 0), para solicitar vacaciones, el empleado necesitará comunicar el programa de vacaciones con el Gerente de la Unidad de Negocio, quien a su vez lo notificará al Gerente de la Matriz y al Gerente Administrativo de la Matriz con anticipación.
+
+No se menciona específicamente los documentos que se deben presentar para solicitar vacaciones, pero se sugiere que el empleado debe comunicarse con el Gerente de la Unidad de Negocio para discutir y acordar el p",
+llama3.2:3b,0.1,1,256,¿A quién debo contactar si tengo dudas de nómina?,1,13.25,"Según el documento ""vacaciones.pdf"" (Página: 1), si tienes dudas sobre la nómina, debes contactar a la persona responsable de la gestión de la nómina de la empresa. Sin embargo, no se menciona explícitamente a quién debes contactar.
+
+Sin embargo, se menciona que el pago de la prima vacacional se efectúa automáticamente vía nómina, lo que sugiere que la gestión de la nómina es responsable de este proceso. También se menciona que el pago se realiza en una sola exhibición, lo que implica que no hay",
+llama3.2:3b,0.1,1,256,¿A quién debo contactar si tengo dudas de nómina?,2,7.303,"Según el documento ""vacaciones.pdf"" (Página: 1), si tienes dudas sobre la nómina, debes contactar a la persona responsable de la gestión de la nómina de la empresa. Sin embargo, no se menciona explícitamente a quién debes contactar.
+
+Puedes intentar contactar a la persona responsable de la gestión de la nómina, como el gerente de recursos humanos o el departamento de personal, para obtener asistencia y resolver tus dudas.",
+llama3.2:3b,0.1,2,256,¿Cuántos días de vacaciones me corresponden al año?,1,16.093,"Según la política de vacaciones de la empresa, el número de días de vacaciones que corresponde al empleado al año se determina según el programa de vacaciones que se formula con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio.
+
+No se establece un número fijo de días de vacaciones que corresponda al empleado al año, sino que se deja la decisión a la discusión y acuerdo entre el empleado, su Jefe Inmediato y el Gerente de la Unidad de Negocio, teniendo en cuenta las ",
+llama3.2:3b,0.1,2,256,¿Cuántos días de vacaciones me corresponden al año?,2,11.679,"Según la política de vacaciones de la empresa, el número de días de vacaciones que corresponde al empleado al año se determina según el programa de vacaciones que se formula con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio.
+
+No se establece un número fijo de días de vacaciones que corresponda al empleado al año, sino que se deja la decisión a la discusión y acuerdo entre el empleado, su Jefe Inmediato y el Gerente de la Unidad de Negocio, teniendo en cuenta las ",
+llama3.2:3b,0.1,2,256,¿Cómo solicito un permiso de ausencia?,1,6.681,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Deben presentar la solicitud al supervisor inmediato y, posteriormente, al gerente para su aprobación.",
+llama3.2:3b,0.1,2,256,¿Cómo solicito un permiso de ausencia?,2,5.044,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Es decir, deben presentar la solicitud de permiso de ausencia a su supervisor inmediato y, posteriormente, a la gerencia para su aprobación.",
+llama3.2:3b,0.1,2,256,¿Cuál es el horario laboral de la empresa?,1,9.515,"Según la política de horas de trabajo de la empresa, el horario laboral es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.",
+llama3.2:3b,0.1,2,256,¿Cuál es el horario laboral de la empresa?,2,5.364,"Según la política de horas de trabajo de la empresa, el horario laboral es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.
+
+Fuente: Politica_de_Horas_de_Trabajo.pdf | Página: 3.",
+llama3.2:3b,0.1,2,256,¿Qué documentos necesito para solicitar vacaciones?,1,15.755,"Según el documento ""vacaciones.pdf"" (Página: 0), no se menciona explícitamente qué documentos son necesarios para solicitar vacaciones. Sin embargo, se indica que el programa de vacaciones se disfrazará de conformidad con el programa que se formule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio.
+
+En otras palabras, el empleado debe comunicar el programa de vacaciones con el Gerente de la Unidad de Negocio, quien a su vez comunicará el programa con el Gerente d",
+llama3.2:3b,0.1,2,256,¿Qué documentos necesito para solicitar vacaciones?,2,13.363,"Según el documento ""vacaciones.pdf"" (Página: 0), no se menciona explícitamente qué documentos son necesarios para solicitar vacaciones. Sin embargo, se indica que el programa de vacaciones se disfrazará de conformidad con el programa que se formule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio.
+
+En otras palabras, el empleado debe comunicar el programa de vacaciones con el Gerente de la Unidad de Negocio, quien a su vez notificará al Gerente de la Matriz y al",
+llama3.2:3b,0.1,2,256,¿A quién debo contactar si tengo dudas de nómina?,1,8.483,"Según el documento vacaciones.pdf, página 1, si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia de la Matriz o a la Gerencia Administrativa de la Matriz.",
+llama3.2:3b,0.1,2,256,¿A quién debo contactar si tengo dudas de nómina?,2,3.341,"Según el documento vacaciones.pdf, página 1, si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia de la Matriz o a la Gerencia Administrativa de la Matriz.",
+llama3.2:3b,0.1,3,256,¿Cuántos días de vacaciones me corresponden al año?,1,23.223,"Según la política de vacaciones de la empresa, los colaboradores tienen derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios y en forma subsiguiente cada aniversario, a partir de su fecha de ingreso.
+
+En este caso, no se especifica cuántos días de vacaciones corresponden al año, pero se menciona que los días de vacaciones se darán a conocer por la Gerencia de Unidad de Negocio previamente autorizada por la Gerencia de Matriz.
+
+Sin embargo, se menciona que se c",
+llama3.2:3b,0.1,3,256,¿Cuántos días de vacaciones me corresponden al año?,2,16.401,"Según la política de vacaciones de la empresa, los colaboradores tienen derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios y en forma subsiguiente cada aniversario, a partir de su fecha de ingreso.
+
+En este caso, no se especifica cuántos días de vacaciones corresponden al año, pero se menciona que los días de vacaciones se darán a conocer previamente autorizados por la Gerencia de Unidad de Negocio, según las necesidades de trabajo y del colaborador.
+
+Es imp",
+llama3.2:3b,0.1,3,256,¿Cómo solicito un permiso de ausencia?,1,10.662,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Deben presentar la solicitud a su supervisor inmediato, quien a su vez la remitirá a la gerencia para su aprobación.",
+llama3.2:3b,0.1,3,256,¿Cómo solicito un permiso de ausencia?,2,5.398,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Deben presentar su solicitud de permiso de ausencia a su supervisor inmediato, quien a su vez debe aprobarla y notificarla a la gerencia.",
+llama3.2:3b,0.1,3,256,¿Cuál es el horario laboral de la empresa?,1,10.535,"Según la política de horas de trabajo de la empresa, el horario laboral es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.
+
+Fuente: Politica_de_Horas_de_Trabajo.pdf | Página: 3.",
+llama3.2:3b,0.1,3,256,¿Cuál es el horario laboral de la empresa?,2,4.258,"Según la política de horas de trabajo de la empresa, el horario laboral es de 6 días a la semana, con goce de un día de descanso. El día de descanso se asignará de acuerdo a las necesidades de la empresa.",
+llama3.2:3b,0.1,3,256,¿Qué documentos necesito para solicitar vacaciones?,1,16.908,"Según la política de vacaciones de GRUPO PROMESSA, para solicitar vacaciones, es necesario comunicar el programa con el Jefe Inmediato y obtener la autorización del Gerente de la Unidad de Negocio, previa comunicación con el Gerente de la Matriz y el Gerente Administrativo de la Matriz.
+
+No se menciona específicamente un documento que deba ser presentado para solicitar vacaciones, pero se indica que el programa debe ser comunicado con anticipación al Gerente de la Matriz y al Gerente Administrat",
+llama3.2:3b,0.1,3,256,¿Qué documentos necesito para solicitar vacaciones?,2,11.21,"Según la política de vacaciones de GRUPO PROMESSA, para solicitar vacaciones, es necesario comunicar el programa con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio, según las necesidades de trabajo y del colaborador. También se menciona que el programa debe comunicarse con toda anticipación al Gerente de la Matriz y al Gerente Administrativo de la Matriz.
+
+No se menciona específicamente los documentos que se deben presentar para solicitar vacaciones, pero se sugie",
+llama3.2:3b,0.1,3,256,¿A quién debo contactar si tengo dudas de nómina?,1,8.308,"Según el documento ""vacaciones.pdf"" (Página: 1), si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia Administrativa de la Matriz.",
+llama3.2:3b,0.1,3,256,¿A quién debo contactar si tengo dudas de nómina?,2,3.214,"Según el documento ""vacaciones.pdf"" (Página: 1), si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia Administrativa de la Matriz.",
+llama3.2:3b,0.3,1,256,¿Cuántos días de vacaciones me corresponden al año?,1,6.922,"No tengo información específica sobre cuántos días de vacaciones te corresponden al año en el documento proporcionado. Sin embargo, puedo decirte que según el Anexo-030 ""Política para vacaciones, permisos y días festivos"", la prima vacacional se pagará en el período correspondiente, con el objeto de que la Unidad de Negocio erogue los beneficios en el año en que se genera. (Fuente: vacaciones.pdf | Página: 5)",
+llama3.2:3b,0.3,1,256,¿Cuántos días de vacaciones me corresponden al año?,2,11.884,"Según la política para vacaciones, permisos y días festivos (PROMESSA Anexo-030, Página 2), no se establece un límite específico de días de vacaciones que se correspondan al año. Sin embargo, se menciona que la prima vacacional se pagará en el período correspondiente, con el objeto de que la Unidad de Negocio erogue los beneficios en el año en que se genera el derecho a las vacaciones.
+
+En otras palabras, no se especifica cuántos días de vacaciones se corresponden al año, pero se garantiza que l",
+llama3.2:3b,0.3,1,256,¿Cómo solicito un permiso de ausencia?,1,11.658,"Según nuestra política de ausencias, para solicitar un permiso de ausencia, los empleados deben seguir los siguientes pasos:
+
+1. Utilizar el formato establecido por la empresa para solicitar el permiso de ausencia.
+2. Presentar la solicitud al supervisor inmediato para obtener su aprobación.
+3. La aprobación también debe ser obtenida por la gerencia.
+
+Es importante recordar que los permisos de ausencia deben ser solicitados con anticipación y que la empresa se reserva el derecho de negar un perm",
+llama3.2:3b,0.3,1,256,¿Cómo solicito un permiso de ausencia?,2,11.456,"Según nuestra política de ausencias, para solicitar un permiso de ausencia, los empleados deben seguir los siguientes pasos:
+
+1. Utilizar el formato de permiso de ausencia establecido por la empresa.
+2. Presentar el formato firmado por el empleado a su supervisor inmediato.
+3. El supervisor inmediato debe aprobado el permiso de ausencia por la gerencia.
+
+Es importante tener en cuenta que los permisos de ausencia deben ser solicitados con anticipación y que la empresa se reserva el derecho de neg",
+llama3.2:3b,0.3,1,256,¿Cuál es el horario laboral de la empresa?,1,6.739,"Según la política de horas de trabajo de la empresa, el horario ordinario se define como ""Periodo de trabajado establecido en el contrato laboral"". Sin embargo, no se proporciona una fecha específica o un horario detallado en el documento disponible.
+
+Por lo tanto, no puedo proporcionar una respuesta detallada sobre el horario laboral de la empresa, ya que no se encuentra en los documentos disponibles.",
+llama3.2:3b,0.3,1,256,¿Cuál es el horario laboral de la empresa?,2,6.16,"Según la política de horas de trabajo de la empresa, no se especifica explícitamente el horario laboral de la empresa en sí, sino que se define el concepto de ""Horario Ordinario"" como el ""Periodo de trabajado establecido en el contrato laboral"".
+
+Por lo tanto, no se puede determinar el horario laboral de la empresa sin conocer los detalles del contrato laboral de cada empleado.",
+llama3.2:3b,0.3,1,256,¿Qué documentos necesito para solicitar vacaciones?,1,11.539,"Según el contexto proporcionado, no se menciona explícitamente los documentos necesarios para solicitar vacaciones. Sin embargo, se indica que el programa de vacaciones se debe comunicar con anticipación al Gerente de la Matriz y al Gerente Administrativo de la Matriz, lo que sugiere que se requiere una comunicación formal o un documento que contenga el programa de vacaciones.
+
+En este sentido, no puedo determinar con certeza qué documentos específicos se requieren para solicitar vacaciones, per",
+llama3.2:3b,0.3,1,256,¿Qué documentos necesito para solicitar vacaciones?,2,13.7,"Según el documento ""vacaciones.pdf"" (Página: 0), para solicitar vacaciones, el empleado necesitará comunicar el programa de vacaciones con el Gerente de la Unidad de Negocio, quien a su vez comunicará el programa con el Gerente de la Matriz y al Gerente Administrativo de la Matriz, con anticipación.
+
+No se menciona explícitamente en el documento qué documentos específicos son necesarios para solicitar vacaciones, pero se sugiere que el empleado debe comunicar el programa de vacaciones con sus su",
+llama3.2:3b,0.3,1,256,¿A quién debo contactar si tengo dudas de nómina?,1,11.007,"Según el documento ""vacaciones.pdf"" (Página 1), si tienes dudas sobre la nómina, debes contactar a la persona responsable de la nómina de la empresa, pero no se menciona a quién específicamente.
+
+Sin embargo, en el documento ""nominas.pdf"" (no se menciona la página, pero se menciona en el contexto) se menciona que la persona responsable de la nómina es el ""Encargado de Nómina"" o ""Administrador de Nómina"", pero no se proporciona más información.
+
+En este caso, te recomiendo contactar al ""Encargado",
+llama3.2:3b,0.3,1,256,¿A quién debo contactar si tengo dudas de nómina?,2,8.405,"Según el documento ""vacaciones.pdf"" (Página: 1), si tienes dudas sobre la nómina, debes contactar a la persona responsable de la gestión de la nómina de la empresa. Sin embargo, no se menciona específicamente a quién debes contactar.
+
+Sin embargo, se menciona en el documento ""vacaciones.pdf"" (Página: 3) que la información sobre la gestión de la nómina se puede encontrar en el ""Manual de procedimientos de la empresa"" o en la sección ""Nómina"" del sitio web de la empresa.",
+llama3.2:3b,0.3,2,256,¿Cuántos días de vacaciones me corresponden al año?,1,6.423,"Según la política de vacaciones de la empresa, se consideran como días hábiles para el efecto de vacaciones seis días a la semana (de lunes a sábado inclusive). Esto significa que al empleado le corresponden 6 días de vacaciones al año, independientemente de en qué mes se disfruten.
+
+(Fuente: vacaciones.pdf | Página: 4)",
+llama3.2:3b,0.3,2,256,¿Cuántos días de vacaciones me corresponden al año?,2,13.728,"Según la política de vacaciones de la empresa, el número de días de vacaciones que corresponden al año se determina según las necesidades de trabajo y del colaborador, y se formaliza con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio.
+
+No se establece un número fijo de días de vacaciones que correspondan al año, sino que se considera un programa que se formaule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio, según las necesidade",
+llama3.2:3b,0.3,2,256,¿Cómo solicito un permiso de ausencia?,1,7.278,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Deben presentar su solicitud de permiso de ausencia a su supervisor inmediato y, posteriormente, a la gerencia para su aprobación.",
+llama3.2:3b,0.3,2,256,¿Cómo solicito un permiso de ausencia?,2,4.928,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Deben presentar su solicitud al supervisor inmediato y, posteriormente, al supervisor inmediato y a la gerencia para obtener su aprobación.",
+llama3.2:3b,0.3,2,256,¿Cuál es el horario laboral de la empresa?,1,9.308,"Según la política de horas de trabajo de la empresa, el horario laboral es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.",
+llama3.2:3b,0.3,2,256,¿Cuál es el horario laboral de la empresa?,2,5.384,"Según la política de horas de trabajo, el horario laboral de la empresa es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.
+
+Fuente: Politica_de_Horas_de_Trabajo.pdf | Página: 3.",
+llama3.2:3b,0.3,2,256,¿Qué documentos necesito para solicitar vacaciones?,1,15.615,"Para solicitar vacaciones, es necesario cumplir con los siguientes pasos y documentación:
+
+1. Comuníquese con su Jefe Inmediato para obtener su aprobación del programa de vacaciones.
+2. Comuníquese con el Gerente de la Unidad de Negocio para obtener su aprobación y comunicar el programa con el Gerente de la Matriz y el Gerente Administrativo de la Matriz.
+3. Debe comunicar el programa con toda anticipación al Gerente de la Matriz y al Gerente Administrativo de la Matriz.
+
+No se menciona específi",
+llama3.2:3b,0.3,2,256,¿Qué documentos necesito para solicitar vacaciones?,2,10.719,"Para solicitar vacaciones, es necesario cumplir con los siguientes pasos:
+
+1. Comunicar el programa de vacaciones con el Jefe Inmediato y obtener su aprobación.
+2. Comunicar el programa de vacaciones con el Gerente de la Unidad de Negocio, quien a su vez debe comunicarlo con el Gerente de la Matriz y el Gerente Administrativo de la Matriz, con anticipación.
+
+No se requiere un documento específico para solicitar vacaciones, pero es importante cumplir con los pasos mencionados anteriormente para a",
+llama3.2:3b,0.3,2,256,¿A quién debo contactar si tengo dudas de nómina?,1,8.475,"Según el documento vacaciones.pdf, página 1, si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia de la Matriz o a la Gerencia Administrativa de la Matriz.",
+llama3.2:3b,0.3,2,256,¿A quién debo contactar si tengo dudas de nómina?,2,3.308,"Según el documento vacaciones.pdf, página 1, si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia de la Matriz o a la Gerencia Administrativa de la Matriz.",
+llama3.2:3b,0.3,3,256,¿Cuántos días de vacaciones me corresponden al año?,1,18.999,"Según la política de vacaciones establecida por el Grupo Promessa, los colaboradores tienen derecho a disfrutar de vacaciones con sueldo pagado a partir del primer año de servicios. En forma subsiguiente, cada aniversario, a partir de su fecha de ingreso.
+
+No se establece un número específico de días de vacaciones que se le correspondan al empleado al año, pero se menciona que los días de vacaciones que podrán disfrutar los colaboradores según su antigüedad en la Unidad de Negocio serán dados a ",
+llama3.2:3b,0.3,3,256,¿Cuántos días de vacaciones me corresponden al año?,2,13.789,"Según la política de vacaciones de GRUPO PROMESSA, que se encuentra en el documento vacaciones.pdf | Página: 2, se establece que los días de vacaciones que corresponden al empleado al año se determinarán según su antigüedad en la Unidad de Negocio.
+
+En concreto, se establece en el artículo 3 de la política que los días de vacaciones que podrán disfrutar los colaboradores según su antigüedad en la Unidad de Negocio, serán dados a conocer por la Gerencia de Unidad de Negocio previamente autorizado",
+llama3.2:3b,0.3,3,256,¿Cómo solicito un permiso de ausencia?,1,9.929,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Esto se menciona en el documento ""Política de ausencias"" (página 0).",
+llama3.2:3b,0.3,3,256,¿Cómo solicito un permiso de ausencia?,2,4.975,"Según la política de ausencias, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. También es importante mencionar que los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.",
+llama3.2:3b,0.3,3,256,¿Cuál es el horario laboral de la empresa?,1,9.117,"Según la política de horas de trabajo de la empresa, el horario laboral es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.",
+llama3.2:3b,0.3,3,256,¿Cuál es el horario laboral de la empresa?,2,6.66,"Según la política de horas de trabajo de KATARA GROUP S.P.R de R.L. de C.V., el horario laboral de la empresa es de 6 días a la semana, con goce de un día de descanso. El día de descanso será asignado de acuerdo a las necesidades de la empresa.
+
+Fuente: Politica_de_Horas_de_Trabajo.pdf | Página: 3.",
+llama3.2:3b,0.3,3,256,¿Qué documentos necesito para solicitar vacaciones?,1,19.868,"Según la política para vacaciones, permisos y días festivos, no se menciona específicamente qué documentos necesitas para solicitar vacaciones. Sin embargo, se indica que el programa de vacaciones se disfrazará de conformidad con el programa que se formule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio, según las necesidades de trabajo y del colaborador.
+
+En otras palabras, es probable que debas comunicar tus necesidades y disponibilidad para vacaciones con tu",
+llama3.2:3b,0.3,3,256,¿Qué documentos necesito para solicitar vacaciones?,2,14.542,"Según la política de vacaciones de GRUPO PROMESSA, para solicitar vacaciones, es necesario comunicar el programa con el Jefe Inmediato y obtener la autorización del Gerente de la Unidad de Negocio. Este programa debe ser previamente aprobado por el Gerente de la Matriz y comunicado a este y al Gerente Administrativo de la Matriz con anticipación.
+
+No se menciona específicamente en los documentos proporcionados que se requieren documentos adicionales para solicitar vacaciones, pero se sugiere que",
+llama3.2:3b,0.3,3,256,¿A quién debo contactar si tengo dudas de nómina?,1,13.822,"Según el documento ""vacaciones.pdf"" (Página: 1), si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia Administrativa de la Matriz, ya que ellos son los encargados de verificar la solicitud de vacaciones y determinar si el colaborador tiene derecho al goce de vacaciones.
+
+En particular, el documento establece que la Gerencia Administrativa de la Matriz verifica la solicitud de vacaciones con los controles respectivos para determinar si tiene derecho a disfrutar de estos días (",
+llama3.2:3b,0.3,3,256,¿A quién debo contactar si tengo dudas de nómina?,2,3.209,"Según el documento ""vacaciones.pdf"" (Página 5), si tienes dudas sobre la nómina, es recomendable contactar a la Gerencia Administrativa de la Matriz.",
+qwen2.5:3b,0.0,1,256,¿Cuántos días de vacaciones me corresponden al año?,1,11.727,"Lo siento, pero no tengo la información específica sobre cuántos días de vacaciones corresponden al año en el documento que me has proporcionado. El contexto que me has dado se centra en la política de vacaciones, permisos y días festivos, pero no proporciona detalles sobre la cantidad de días de vacaciones anuales.",
+qwen2.5:3b,0.0,1,256,¿Cuántos días de vacaciones me corresponden al año?,2,4.434,"Lo siento, pero no tengo la información específica sobre cuántos días de vacaciones me corresponden al año en este documento. El contexto que me proporcionaste se centra en la política de vacaciones, permisos y días festivos, pero no proporciona detalles sobre la cantidad de días de vacaciones asignados a los empleados.",
+qwen2.5:3b,0.0,1,256,¿Cómo solicito un permiso de ausencia?,1,9.089,"Para solicitar un permiso de ausencia, os informamos que los empleados deben utilizar el formato establecido por la empresa e informar a su supervisor inmediato. El permiso de ausencia debe ser aprobado por o por ambos, o por parte del supervisor inmediato y da luego por parte da la gerencia.",
+qwen2.5:3b,0.0,1,256,¿Cómo solicito un permiso de ausencia?,2,3.373,"Los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. El permiso de ausencia debe ser aprobado por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.0,1,256,¿Cuál es el horario laboral de la empresa?,1,4.763,"La información sobre el horario laboral de la empresa no está disponible en el documento ""Politica_de_Horas_de_Trabajo.pdf"" que se encuentra en la página 2.",
+qwen2.5:3b,0.0,1,256,¿Cuál es el horario laboral de la empresa?,2,4.962,"Según la política de horas de trabajo, el horario laboral de la empresa es el horario ordinario establecido en el contrato laboral. Sin embargo, no tengo información específica sobre qué horas específicamente se consideran como horario ordinario en este documento. Para obtener esta información, te recomendaría consultar directamente el contrato laboral de tu posición.",
+qwen2.5:3b,0.0,1,256,¿Qué documentos necesito para solicitar vacaciones?,1,8.467,"Según los documentos disponibles en ""vacaciones.pdf"", no se menciona ningún documento específico que deba solicitarse para solicitar vacaciones. Se proporcionan reglas y procedimientos para la gestión de vacaciones, pero no se indica qué documentos son necesarios para realizar la solicitud.",
+qwen2.5:3b,0.0,1,256,¿Qué documentos necesito para solicitar vacaciones?,2,1.775,"Según los documentos disponibles en ""vacaciones.pdf"", no hay información específica sobre los documentos necesarios para solicitar vacaciones.",
+qwen2.5:3b,0.0,1,256,¿A quién debo contactar si tengo dudas de nómina?,1,3.741,"Si tienes dudas sobre la nómina, deberás contactar con el gerente del matriz.",
+qwen2.5:3b,0.0,1,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.397,"Si tienes dudas sobre tu nómina, debes contactar con el gerente del matriz.",
+qwen2.5:3b,0.0,2,256,¿Cuántos días de vacaciones me corresponden al año?,1,12.019,"Según la información proporcionada en el documento ""vacaciones.pdf"" en la página 2, no se especifica cuántos días de vacaciones me corresponden al año. La documentación aborda temas como la política de vacaciones, el pago de la prima vacacional y las condiciones para disfrutar de las vacaciones, pero no incluye detalles sobre la cantidad de días de vacaciones anuales.",
+qwen2.5:3b,0.0,2,256,¿Cuántos días de vacaciones me corresponden al año?,2,4.077,"Según la información proporcionada en el documento ""vacaciones.pdf"" en la página 2, no se especifica cuántos días de vacaciones me corresponden al año. Solo se describe cómo se gestionan las vacaciones y no se indica el número de días de vacaciones anuales.",
+qwen2.5:3b,0.0,2,256,¿Cómo solicito un permiso de ausencia?,1,6.056,"Para solicitar un permiso de ausencia, los empleados deben utilizar el formato establecido por la empresa e informar a su supervisor inmediato. Luego, el permiso debe ser aprobado por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.0,2,256,¿Cómo solicito un permiso de ausencia?,2,3.384,"Los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.0,2,256,¿Cuál es el horario laboral de la empresa?,1,8.459,"La empresa establece un horario laboral de 6 días por semana, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario ordinario se encuentra definido en el contrato laboral.",
+qwen2.5:3b,0.0,2,256,¿Cuál es el horario laboral de la empresa?,2,3.426,"La empresa establece un horario laboral de 6 días por semana, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario ordinario se encuentra definido en el contrato laboral.",
+qwen2.5:3b,0.0,2,256,¿Qué documentos necesito para solicitar vacaciones?,1,5.261,"Para solicitar vacaciones, necesitas referirse ao documento ""vacaciones.pdf"". Nele estão descritas as regras e procedimentos para o uso e a concessão de férias.",
+qwen2.5:3b,0.0,2,256,¿Qué documentos necesito para solicitar vacaciones?,2,5.578,"Para solicitar vacaciones, necesitas referenciar o consultar o los siguientes documentos:
+
+1. [Fuente: vacaciones.pdf | Página: 0] y [Fuente: vacaciones.pdf | Página: 2]
+   
+Estos documentos contienen información sobre cómo se gestionan las vacaciones, los días hábiles y la política de vacaciones, permisos y días festivos.",
+qwen2.5:3b,0.0,2,256,¿A quién debo contactar si tengo dudas de nómina?,1,6.765,"Si tienes dudas sobre nómina, debes contactar con el Gerente de la Unidad de Negocio.",
+qwen2.5:3b,0.0,2,256,¿A quién debo contactar si tengo dudas de nómina?,2,6.861,"Si tienes dudas sobre nómina, debes contactar con o consultar a:
+
+1. El Gerente de la Unidad de Negocio
+2. La Gerencia de la Matriz
+3. La Gerencia Administrativa de la Matriz
+
+Estos son los responsables mencionados en el documento de vacaciones.pdf, página 1, donde se indica que anualmente cada Gerente de Unidad de Negocio deberá elaborar un programa de vacaciones e informar a estos departamentos.",
+qwen2.5:3b,0.0,3,256,¿Cuántos días de vacaciones me corresponden al año?,1,15.018,"Según la política de vacaciones establecida, los colaboradores tienen derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios. Los días de vacaciones que podrán disfrutar los colaboradores según su antigüedad en la Unidad de Negocio serán dados a conocer por la Gerencia de Unidad de Negocio previamente autorizado por la Gerencia de Matriz de acuerdo a la Ley Federal de Trabajo y/o a su propia reglamentación.
+
+Sin embargo, la información específica sobre cuántos d",
+qwen2.5:3b,0.0,3,256,¿Cuántos días de vacaciones me corresponden al año?,2,11.449,"Según la política de vacaciones establecida, los colaboradores tienen derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios. Los días de vacaciones que podrán disfrutar los colaboradores varían según su antigüedad en la Unidad de Negocio, y estos días se darán a conocer por la Gerencia de la Unidad de Negocio previamente autorizado por la Gerencia de Matriz de acuerdo a la Ley Federal de Trabajo y/o a su propia reglamentación.
+
+Por lo tanto, la cantidad de días",
+qwen2.5:3b,0.0,3,256,¿Cómo solicito un permiso de ausencia?,1,9.036,"Para solicitar un permiso de ausencia, los empleados deben utilizar el formato establecido por la empresa e informar a su supervisor inmediato. El permiso debe ser aprobado por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.0,3,256,¿Cómo solicito un permiso de ausencia?,2,3.581,"Para solicitar un permiso de ausencia, los empleados deben utilizar el formato establecido por la empresa e informar a su supervisor inmediato. El permiso debe ser aprobado por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.0,3,256,¿Cuál es el horario laboral de la empresa?,1,8.098,"La empresa establece una semana laboral de 6 días, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario ordinario se encuentra establecido en el contrato laboral.",
+qwen2.5:3b,0.0,3,256,¿Cuál es el horario laboral de la empresa?,2,3.311,"La empresa establece una semana laboral de 6 días, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario ordinario se encuentra establecido en el contrato laboral.",
+qwen2.5:3b,0.0,3,256,¿Qué documentos necesito para solicitar vacaciones?,1,11.001,"Para solicitar vacaciones, necesitas referencias aos a los siguientes documentos:
+
+1. [Fuente: vacaciones.pdf | Página: 0]
+2. [Fuente: vacaciones.pdf | Página: 2]
+
+Estos documentos contienen la política de vacaciones de Grupo Promessa, que establecen cómo se deben solicitar y disfrutar las vacaciones.",
+qwen2.5:3b,0.0,3,256,¿Qué documentos necesito para solicitar vacaciones?,2,6.645,"Para solicitar vacaciones, necesitas consultar o tener a mano os siguientes documentos:
+
+1. [Fuente: vacaciones.pdf | Página: 0] 
+2. [Fuente: vacaciones.pdf | Página: 2]
+
+Estos documentos contienen información sobre cómo se gestionan las vacaciones en Grupo Promessa, incluyendo los días hábiles para las vacaciones, la política de prima vacacional y las condiciones para la solicitud de vacaciones.",
+qwen2.5:3b,0.0,3,256,¿A quién debo contactar si tengo dudas de nómina?,1,6.549,"Si tienes dudas sobre nómina, deberás contactar con la Gerencia Administrativa de la Matriz.",
+qwen2.5:3b,0.0,3,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.676,"Si tienes dudas sobre nómina, debes contactar con a Gerencia Administrativa de la Matriz.",
+qwen2.5:3b,0.1,1,256,¿Cuántos días de vacaciones me corresponden al año?,1,6.639,"Lo siento, pero no tengo la información específica sobre cuántos días de vacaciones corresponden al año en el documento que me has proporcionado. El contexto que me has dado se centra en la política de vacaciones, permisos y días festivos, pero no proporciona detalles sobre la cantidad de días de vacaciones anuales.",
+qwen2.5:3b,0.1,1,256,¿Cuántos días de vacaciones me corresponden al año?,2,3.059,"Lo siento, pero no tengo la información específica sobre cuántos días de vacaciones me corresponden al año en este documento. El contexto que proporcionaste no incluye detalles sobre la cantidad de días de vacaciones.",
+qwen2.5:3b,0.1,1,256,¿Cómo solicito un permiso de ausencia?,1,4.711,"Para solicitar un permiso de ausencia, os informamos que los empleados deben utilizar el formato establecido por la empresa e informar a su supervisor inmediato. El permiso de ausencia debe ser aprobado por o bien el supervisor inmediato, o bien por la gerencia.",
+qwen2.5:3b,0.1,1,256,¿Cómo solicito un permiso de ausencia?,2,4.831,"Según la política de ausencias establecida en el documento ""política_de_ausencias.pdf"" en la página 0, para solicitar un permiso de ausencia, los empleados deben utilizar el formato establecido por la empresa. El permiso de ausencia debe ser aprobado por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.1,1,256,¿Cuál es el horario laboral de la empresa?,1,3.593,"Según la política de horas de trabajo, el horario laboral de la empresa es el horario ordinario establecido en el contrato laboral. No tengo información específica sobre el horario ordinario en los documentos disponibles.",
+qwen2.5:3b,0.1,1,256,¿Cuál es el horario laboral de la empresa?,2,3.064,"Según la política de horas de trabajo, el horario laboral de la empresa es el horario ordinario establecido en el contrato laboral. No tengo información específica sobre el horario extraordinario en los documentos disponibles.",
+qwen2.5:3b,0.1,1,256,¿Qué documentos necesito para solicitar vacaciones?,1,2.295,"Según los documentos disponibles, no se proporciona información específica sobre qué documentos son necesarios para solicitar vacaciones.",
+qwen2.5:3b,0.1,1,256,¿Qué documentos necesito para solicitar vacaciones?,2,1.85,"Según los documentos disponibles en ""vacaciones.pdf"", no hay información específica sobre qué documentos son necesarios para solicitar vacaciones.",
+qwen2.5:3b,0.1,1,256,¿A quién debo contactar si tengo dudas de nómina?,1,3.74,"Si tienes dudas sobre tu nómina, debes contactar con el gerente del matriz.",
+qwen2.5:3b,0.1,1,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.566,"Si tienes dudas sobre la nómina, deberás contactar con el departamento de Recursos Humanos.",
+qwen2.5:3b,0.1,2,256,¿Cuántos días de vacaciones me corresponden al año?,1,4.601,"Según la información proporcionada en el documento ""vacaciones.pdf"" en la página 2, no se especifica cuántos días de vacaciones me corresponden al año. Solo se describe cómo se gestionan las vacaciones y no se indica el número de días de vacaciones anuales.",
+qwen2.5:3b,0.1,2,256,¿Cuántos días de vacaciones me corresponden al año?,2,5.638,"Según la información proporcionada en el documento ""vacaciones.pdf"" en la página 2, no se especifica cuántos días de vacaciones me corresponden al año. La documentación aborda temas como la política de vacaciones, el pago de la prima vacacional y las condiciones para disfrutar de las vacaciones, pero no incluye detalles sobre la cantidad de días de vacaciones anuales.",
+qwen2.5:3b,0.1,2,256,¿Cómo solicito un permiso de ausencia?,1,6.183,"Para solicitar un permiso de ausencia, los empleados deben utilizar el formato establecido por la empresa e informar a su supervisor inmediato. Luego, el permiso debe ser aprobado por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.1,2,256,¿Cómo solicito un permiso de ausencia?,2,3.426,"Los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.1,2,256,¿Cuál es el horario laboral de la empresa?,1,8.446,"La empresa establece un horario laboral de 6 días por semana, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario ordinario se encuentra definido en el contrato laboral.",
+qwen2.5:3b,0.1,2,256,¿Cuál es el horario laboral de la empresa?,2,2.869,"La empresa establece un horario laboral de 6 días por semana, con un descanso de un día. Este horario será asignado de acuerdo a las necesidades de la empresa.",
+qwen2.5:3b,0.1,2,256,¿Qué documentos necesito para solicitar vacaciones?,1,12.842,"Para solicitar vacaciones, necesitas referenciar os los documentos mencionados en los documentos de la empresa:
+
+1. [vacaciones.pdf | Página: 0] - Este documento contiene la reglamentación general sobre vacaciones.
+2. [vacaciones.pdf | Página: 2] - Este anexo proporciona detalles adicionales sobre la política de vacaciones, incluyendo la información sobre la prima vacacional.
+
+Es importante comunicar el programa de vacaciones con anticipación al Gerente de la Matriz y al Gerente Administrativo d",
+qwen2.5:3b,0.1,2,256,¿Qué documentos necesito para solicitar vacaciones?,2,5.509,"Para solicitar vacaciones, necesitas referenciar o consultar o los siguientes documentos:
+
+1. [Fuente: vacaciones.pdf | Página: 0] y [Fuente: vacaciones.pdf | Página: 2]
+   
+Estos documentos contienen información sobre cómo se gestionan las vacaciones, los días hábiles y la política para vacaciones, permisos y días festivos.",
+qwen2.5:3b,0.1,2,256,¿A quién debo contactar si tengo dudas de nómina?,1,2.319,"Si tienes dudas sobre nómina, debes contactar con a Gerencia de Recursos Humanos.",
+qwen2.5:3b,0.1,2,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.638,"Si tienes dudas sobre nómina, debes contactar con a Gerencia de Recursos Humanos.",
+qwen2.5:3b,0.1,3,256,¿Cuántos días de vacaciones me corresponden al año?,1,15.151,"Según la política de vacaciones establecida, cada colaborador tiene derecho a disfrutar de vacaciones con el sueldo pagado a partir del primer año de servicios. Los días de vacaciones que podrán disfrutar los colaboradores según su antigüedad en la Unidad de Negocio serán dados a conocer por la Gerencia de Unidad de Negocio previamente autorizado por la Gerencia de Matriz de acuerdo a la Ley Federal de Trabajo y/o a su propia reglamentación.
+
+Sin embargo, la información específica sobre cuántos ",
+qwen2.5:3b,0.1,3,256,¿Cuántos días de vacaciones me corresponden al año?,2,11.334,"Según la política de vacaciones establecida, los colaboradores tienen derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios. Los días de vacaciones que podrán disfrutar los colaboradores varían según su antigüedad en la Unidad de Negocio, y estos días se darán a conocer por la Gerencia de la Unidad de Negocio previamente autorizado por la Gerencia de Matriz de acuerdo a la Ley Federal de Trabajo y/o a su propia reglamentación.
+
+Por lo tanto, no se especifica cu",
+qwen2.5:3b,0.1,3,256,¿Cómo solicito un permiso de ausencia?,1,8.925,"Para solicitar un permiso de ausencia, los empleados deben utilizar el formato establecido por la empresa e informar a su supervisor inmediato. El permiso debe ser aprobado por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.1,3,256,¿Cómo solicito un permiso de ausencia?,2,3.715,"Para solicitar un permiso de ausencia, los empleados deben utilizar el formato establecido por la empresa e informar a su supervisor inmediato. Además, el permiso debe ser aprobado por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.1,3,256,¿Cuál es el horario laboral de la empresa?,1,8.12,"La empresa establece una semana laboral de 6 días, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario ordinario se encuentra establecido en el contrato laboral.",
+qwen2.5:3b,0.1,3,256,¿Cuál es el horario laboral de la empresa?,2,3.333,"La empresa establece una semana laboral de 6 días, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario ordinario se encuentra establecido en el contrato laboral.",
+qwen2.5:3b,0.1,3,256,¿Qué documentos necesito para solicitar vacaciones?,1,15.673,"Para solicitar vacaciones, según la información disponible, você precisa dos documentos:
+
+1. A sua própria reglamentación, que provém do documento ""vacaciones.pdf"" na página 0.
+2. A Política para vacaciones, permisos y días festivos, que provém do documento ""vacaciones.pdf"" na página 2.
+
+É importante comunicar o programa de vacações ao Gerente de Matriz e ao Gerente Administrativo de Matriz com antecedência, conforme estabelecido na política. Além disso, é necessário ter a autorização do Jefe In",
+qwen2.5:3b,0.1,3,256,¿Qué documentos necesito para solicitar vacaciones?,2,6.339,"Para solicitar vacaciones, necesitas consultar o tener a mano os siguientes documentos:
+
+1. [Fuente: vacaciones.pdf | Página: 0] 
+2. [Fuente: vacaciones.pdf | Página: 2]
+
+Estos documentos contienen información sobre cómo se gestionan las vacaciones, cómo se consideran los días hábiles para las vacaciones e información sobre la política de vacaciones, permisos y días festivos.",
+qwen2.5:3b,0.1,3,256,¿A quién debo contactar si tengo dudas de nómina?,1,6.536,"Si tienes dudas sobre nómina, deberás contactar con la Gerencia Administrativa de la Matriz.",
+qwen2.5:3b,0.1,3,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.678,"Si tienes dudas sobre nómina, debes contactar con a Gerencia Administrativa de la Matriz.",
+qwen2.5:3b,0.3,1,256,¿Cuántos días de vacaciones me corresponden al año?,1,3.692,"Lo siento, pero no tengo la información específica sobre cuántos días de vacaciones me corresponden al año en este documento. El contexto proporcionado se centra en la política de vacaciones y no en la cantidad de días de vacaciones asignados a los empleados.",
+qwen2.5:3b,0.3,1,256,¿Cuántos días de vacaciones me corresponden al año?,2,4.363,"Lo siento, pero no tengo la información específica sobre cuántos días de vacaciones me corresponden al año en el documento que has mencionado. El contexto proporcionado habla sobre la política de vacaciones, permisos y días festivos, pero no incluye detalles sobre la cantidad de días de vacaciones anuales.",
+qwen2.5:3b,0.3,1,256,¿Cómo solicito un permiso de ausencia?,1,4.954,"Para solicitar un permiso de ausencia, os informamos que los empleados deben utilizar el formato establecido por la empresa e informar a su supervisor inmediato con anticipación. El permiso de ausencia debe ser aprobado por el supervisor inmediato e, incluso, por parte da la gerencia.",
+qwen2.5:3b,0.3,1,256,¿Cómo solicito un permiso de ausencia?,2,4.695,"Según la política de ausencias establecida en el documento ""politica_de_ausencias.pdf"", los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.3,1,256,¿Cuál es el horario laboral de la empresa?,1,2.585,La información sobre el horario laboral de la empresa no está disponible en los documentos de la empresa que se han proporcionado hasta el momento.,
+qwen2.5:3b,0.3,1,256,¿Cuál es el horario laboral de la empresa?,2,2.872,"Según la política de horas de trabajo, el horario laboral de la empresa está establecido en el contrato laboral. No tengo información específica sobre los horarios de trabajo en particular en los documentos disponibles.",
+qwen2.5:3b,0.3,1,256,¿Qué documentos necesito para solicitar vacaciones?,1,11.92,"Según los detalles proporcionados en el documento ""vacaciones.pdf"", para solicitar vacaciones, necesitas:
+
+1. El programa de vacaciones con el Jefe Inmediato.
+2. La previa autorización del Gerente de la Unidad de Negocio.
+3. Comunicación del Gerente de la Unidad de Negocio al Gerente de la Matriz y al Gerente Administrativo de la Matriz.
+
+Estos documentos deben ser comunicados con anticipación para asegurar que las vacaciones se disfruten de manera adecuada.",
+qwen2.5:3b,0.3,1,256,¿Qué documentos necesito para solicitar vacaciones?,2,1.799,"Según los documentos disponibles (vacaciones.pdf), no hay información específica sobre los documentos necesarios para solicitar vacaciones.",
+qwen2.5:3b,0.3,1,256,¿A quién debo contactar si tengo dudas de nómina?,1,3.872,"Si tienes dudas sobre tu nómina, debes contactar con el gerente del matriz.",
+qwen2.5:3b,0.3,1,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.564,"Si tienes dudas sobre tu nómina, deberás contactar con el departamento de Recursos Humanos.",
+qwen2.5:3b,0.3,2,256,¿Cuántos días de vacaciones me corresponden al año?,1,6.83,"Según la información proporcionada en el documento ""vacaciones.pdf"" en la página 2, no se especifica directamente cuántos días de vacaciones me corresponden al año. La documentación aborda temas como la política de vacaciones, la forma de calcular la prima vacacional e información sobre días hábiles y descansos obligatorios. No se indica cuánto tiempo de vacaciones está cubierto por la política.",
+qwen2.5:3b,0.3,2,256,¿Cuántos días de vacaciones me corresponden al año?,2,6.129,"Según la información proporcionada en el documento ""vacaciones.pdf"" en la página 2, no se especifica cuántos días de vacaciones me corresponden al año. La documentación cubre aspectos como la política de vacaciones, el pago de la prima vacacional y el manejo de los días festivos, pero no incluye detalles sobre cuántas vacaciones son otorgadas anualmente a los empleados.",
+qwen2.5:3b,0.3,2,256,¿Cómo solicito un permiso de ausencia?,1,9.448,"Para solicitar un permiso de ausencia, los empleados deben utilizar el formato establecido por la empresa. Este formato debe ser completado con anticipación e incluir detalles como la fecha de inicio y final de la ausencia, el motivo y cualquier información relevante. Una vez completado, el empleado debe presentarlo al supervisor inmediato para su aprobación. Luego, el permiso de ausencia debe ser aprobado por la gerencia antes de que se considere como aprobado.",
+qwen2.5:3b,0.3,2,256,¿Cómo solicito un permiso de ausencia?,2,3.411,"Los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. El permiso de ausencia debe ser aprobado por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.3,2,256,¿Cuál es el horario laboral de la empresa?,1,8.396,"La empresa establece un horario laboral de 6 días por semana, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario ordinario se encuentra establecido en el contrato laboral.",
+qwen2.5:3b,0.3,2,256,¿Cuál es el horario laboral de la empresa?,2,3.993,"La empresa establece un horario laboral de 6 días por semana, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario laboral se resume en 6 días de trabajo seguidos de un día de descanso.",
+qwen2.5:3b,0.3,2,256,¿Qué documentos necesito para solicitar vacaciones?,1,3.915,"Para solicitar vacaciones, según la información disponible no menciona ningún documento específico. Se recomienda consultar los documentos relacionados con las políticas de vacaciones, que no se encuentran mencionados en el contexto proporcionado.",
+qwen2.5:3b,0.3,2,256,¿Qué documentos necesito para solicitar vacaciones?,2,6.721,"Para solicitar vacaciones, según los documentos disponibles, você precisa do seguinte:
+
+1. O Programa de Vacação formulado pelo seu Chefe Imediato e a Autorização da Unidade de Negócio.
+2. A Autorização do Gerente de Matriz.
+
+Você deve comunicar ao Gerente de Matriz e ao Gerente Administrativo da Matriz o programa de vacações com antecedência.",
+qwen2.5:3b,0.3,2,256,¿A quién debo contactar si tengo dudas de nómina?,1,4.893,"Si tienes dudas sobre nómina, debes contactar con a Gerencia Administrativa de la Matriz. Esta se encarga de elaborar y notificar el programa de vacaciones anualmente, que incluye la información sobre las vacaciones a disfrutar.",
+qwen2.5:3b,0.3,2,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.991,"Si tienes dudas sobre nómina, deberás contactar con el departamento de Recursos Humanos.",
+qwen2.5:3b,0.3,3,256,¿Cuántos días de vacaciones me corresponden al año?,1,21.1,"Según la política de vacaciones establecida en el documento, los colaboradores tienen derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios. Los días de vacaciones que podrán disfrutar los colaboradores según su antigüedad en la Unidad de Negocio serán dados a conocer por la Gerencia de Unidad de Negocio previamente autorizado por la Gerencia de Matriz de acuerdo a la Ley Federal de Trabajo y/o a su propia reglamentación.
+
+Sin embargo, no se especifica cuántos ",
+qwen2.5:3b,0.3,3,256,¿Cuántos días de vacaciones me corresponden al año?,2,8.265,"Según la política de vacaciones establecida, los colaboradores disfrutan de 15 días de vacaciones al año. Este número se deriva de la página 2 del documento ""vacaciones.pdf"", donde se especifica que ""Todos los colaboradores tendrán derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios y en forma subsiguiente cada aniversario, a partir de su fecha de ingreso.""",
+qwen2.5:3b,0.3,3,256,¿Cómo solicito un permiso de ausencia?,1,15.88,"Para solicitar un permiso de ausencia, los empleados deben seguir estos pasos:
+
+1. Informar a su supervisor inmediato si van a estar ausentes o tienen intención de llegar tarde.
+2. Solicitar un permiso de ausencia por escrito utilizando el formato establecido por la empresa.
+3. El permiso de ausencia debe ser aprobado por el supervisor inmediato y por la gerencia.
+
+Es importante mencionar que la empresa se reserva el derecho de negar un permiso de ausencia si considera que puede afectar negativa",
+qwen2.5:3b,0.3,3,256,¿Cómo solicito un permiso de ausencia?,2,3.655,"Para solicitar un permiso de ausencia, los empleados deben utilizar el formato establecido por la empresa e informar a su supervisor inmediato. El permiso debe ser aprobado por el supervisor inmediato y por la gerencia.",
+qwen2.5:3b,0.3,3,256,¿Cuál es el horario laboral de la empresa?,1,10.021,"La empresa establece una semana laboral de 6 días, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario ordinario se mantiene según el artículo 61 de la Ley Federal del Trabajo.",
+qwen2.5:3b,0.3,3,256,¿Cuál es el horario laboral de la empresa?,2,4.268,"La empresa establece un horario laboral de 6 días por semana, con un día de descanso asignado de acuerdo a las necesidades de la empresa. El horario ordinario de trabajo se describe en el documento de política de horas de trabajo.",
+qwen2.5:3b,0.3,3,256,¿Qué documentos necesito para solicitar vacaciones?,1,14.851,"Para solicitar vacaciones, necesitarás los seguintes documentos:
+
+1. **Política para vacaciones, permisos y días festivos** (Anexo-030) - Este documento fornece as informações sobre a política de vacação, incluindo os requisitos e os documentos necessários para solicitar e disfurar as vacaciones.
+
+O documento está disponível no [vacaciones.pdf | Página: 0].",
+qwen2.5:3b,0.3,3,256,¿Qué documentos necesito para solicitar vacaciones?,2,8.497,"Para solicitar vacaciones, necesitarás los seguintes documentos:
+
+1. El Anexo-030 da Política para Vacaciones, Permisos y Días Festivos, que se encontra na página 2 do documento ""vacaciones.pdf"".
+
+2. A política de vacaciones do GRUPO PROMESSA, que se encontra na página 1 do mesmo documento ""vacaciones.pdf"".
+
+Estes documentos te proporcionarán todas as informações necesarias para solicitar e gestionar as vacaciones conforme a reglamentación da empresa.",
+qwen2.5:3b,0.3,3,256,¿A quién debo contactar si tengo dudas de nómina?,1,7.137,"Si tienes dudas sobre nómina, deberías contactarte con la Gerencia Administrativa de la Matriz.",
+qwen2.5:3b,0.3,3,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.742,"Si tienes dudas sobre nómina, debes contactar con a Gerencia Administrativa de la Matriz.",
+qwen2.5:1.5b,0.0,1,256,¿Cuántos días de vacaciones me corresponden al año?,1,6.161,"La información sobre cuántos días de vacaciones se corresponden al año está disponible en la Política para Vacaciones, Permisos y Días Festivos, # Revisión: 00, en la página 2 del documento ""PROMESSA Anexo-030"".",
+qwen2.5:1.5b,0.0,1,256,¿Cuántos días de vacaciones me corresponden al año?,2,1.65,"La información sobre cuántos días de vacaciones se corresponden al año está en la Política para vacaciones, permisos y días festivos, # Revisión: 00, del Anexo-030.",
+qwen2.5:1.5b,0.0,1,256,¿Cómo solicito un permiso de ausencia?,1,7.7,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa.
+3. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.
+4. La empresa se reserva el derecho de negar un permiso de ausencia si considera que la ausencia puede afectar negativamente a la productivid",
+qwen2.5:1.5b,0.0,1,256,¿Cómo solicito un permiso de ausencia?,2,7.058,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Si el empleado no informa de su ausencia, se considerará ausencia injustificada.
+3. Los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa.
+4. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.
+5. La empresa se reserva el derecho d",
+qwen2.5:1.5b,0.0,1,256,¿Cuál es el horario laboral de la empresa?,1,2.407,"El horario laboral de la empresa se encuentra definido en la Política de Horas de Trabajo, específicamente en la página 2 del documento.",
+qwen2.5:1.5b,0.0,1,256,¿Cuál es el horario laboral de la empresa?,2,1.248,"El horario laboral de la empresa se encuentra definido en la Política de Horas de Trabajo, específicamente en la página 2 del documento.",
+qwen2.5:1.5b,0.0,1,256,¿Qué documentos necesito para solicitar vacaciones?,1,10.888,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf** (Página: 0): Este documento proporciona la información general sobre las vacaciones, incluyendo que se consideran como días hábiles seis días a la semana (de lunes a sábado inclusive).
+
+2. **Reglamentación de la empresa**: Este documento proporciona la información específica sobre las vacaciones, como las reglas y procedimientos para solicitar y disfrutar de las vacaciones.
+
+3. **Reglamentación de la Unidad ",
+qwen2.5:1.5b,0.0,1,256,¿Qué documentos necesito para solicitar vacaciones?,2,8.506,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf** (Página: 0): Documento que contiene la reglamentación general sobre vacaciones, incluyendo la información sobre días hábiles y días de descanso obligatorio.
+
+2. **Reglamentación de la empresa** (a su propia reglamentación): Documento que especifica las reglas y procedimientos específicos para la solicitud de vacaciones, incluyendo la comunicación del programa con el Jefe Inmediato, la previa autorización del",
+qwen2.5:1.5b,0.0,1,256,¿A quién debo contactar si tengo dudas de nómina?,1,2.0,"Para contactar si tienes dudas sobre la nómina, deberás comunicarte con el Gerente Matriz.",
+qwen2.5:1.5b,0.0,1,256,¿A quién debo contactar si tengo dudas de nómina?,2,0.978,"Para contactar si tienes dudas sobre la nómina, debes comunicarte con el gerente del departamento matriz.",
+qwen2.5:1.5b,0.0,2,256,¿Cuántos días de vacaciones me corresponden al año?,1,6.638,"Según el documento ""vacaciones.pdf"" (Página: 2), las vacaciones se calcularán de acuerdo con el programa que se formule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio, según las necesidades de trabajo y del colaborador, comunicando el Gerente de la Unidad de Negocio el programa con toda anticipación al Gerente de la Matriz y al Gerente Administrativo de la Matriz.",
+qwen2.5:1.5b,0.0,2,256,¿Cuántos días de vacaciones me corresponden al año?,2,3.305,"Según el documento de la empresa, las vacaciones se calcularán de acuerdo con el programa que se formule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio, según las necesidades de trabajo y del colaborador, comunicando el Gerente de la Unidad de Negocio el programa con toda anticipación al Gerente de la Matriz y al Gerente Administrativo de la Matriz.",
+qwen2.5:1.5b,0.0,2,256,¿Cómo solicito un permiso de ausencia?,1,6.417,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa.
+3. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.
+4. La empresa se reserva el derecho de negar un permiso de ausencia si considera que la ausencia puede afectar negativamente a la productivid",
+qwen2.5:1.5b,0.0,2,256,¿Cómo solicito un permiso de ausencia?,2,5.476,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa.
+3. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.
+4. La empresa se reserva el derecho de negar un permiso de ausencia si considera que la ausencia puede afectar negativamente a la productivid",
+qwen2.5:1.5b,0.0,2,256,¿Cuál es el horario laboral de la empresa?,1,4.195,"El horario laboral de la empresa está establecido en el artículo 2 de la Política de Horas de Trabajo. Según esta política, el horario ordinario de trabajo se encuentra en el contrato laboral.",
+qwen2.5:1.5b,0.0,2,256,¿Cuál es el horario laboral de la empresa?,2,1.006,El horario laboral de la empresa es establecido en el artículo 2 de la Política de Horas de Trabajo.,
+qwen2.5:1.5b,0.0,2,256,¿Qué documentos necesito para solicitar vacaciones?,1,10.386,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf** (Página: 0): Documenta las reglas y procedimientos para la solicitud de vacaciones, incluyendo la cantidad de días hábiles considerados y las condiciones para la cancelación de vacaciones debido a un día de descanso obligatorio.
+
+2. **Vacaciones.pdf** (Página: 2): Anexo-030, que contiene la política para vacaciones, permisos y días festivos, incluyendo la promesa de pago de la prima vacacional en el periodo ",
+qwen2.5:1.5b,0.0,2,256,¿Qué documentos necesito para solicitar vacaciones?,2,6.644,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf** (Página 0): Documenta las reglas y procedimientos para la solicitud de vacaciones, incluyendo la cantidad de días hábiles considerados y las condiciones para la cancelación de vacaciones.
+
+2. **Vacaciones.pdf** (Página 2): Anexo-030, que contiene la política para vacaciones, permisos y días festivos, incluyendo la promesa de pago de prima vacacional.
+
+3. **Revisión**: 00: Esta campo de revisión indica que la",
+qwen2.5:1.5b,0.0,2,256,¿A quién debo contactar si tengo dudas de nómina?,1,3.921,"Si tienes dudas sobre la nómina, deberás contactar al Gerente del Matriz. Esta información se encuentra en la página 1 del documento ""vacaciones.pdf"".",
+qwen2.5:1.5b,0.0,2,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.491,"Para contactar si tienes dudas sobre la nómina, debes comunicarte con el Gerente del Matriz. Esta información se encuentra en la página 1 del documento ""vacaciones.pdf"".",
+qwen2.5:1.5b,0.0,3,256,¿Cuántos días de vacaciones me corresponden al año?,1,12.448,"Según la política de vacaciones, permisos y días festivos de GRUPO PROMESSA, los colaboradores disfrutarán de sus días de vacaciones de conformidad con los siguientes puntos:
+
+1. Todo el personal disfrutará de los días de vacaciones en función a los años de servicio continuo en la compañía, tomando como base su fecha de ingreso reconocida.
+
+2. Todos los colaboradores tendrán derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios y en forma subsequente cada anive",
+qwen2.5:1.5b,0.0,3,256,¿Cuántos días de vacaciones me corresponden al año?,2,6.131,"Según la política de vacaciones, permisos y días festivos del Grupo PROMESSA, los colaboradores disfrutarán de vacaciones de acuerdo a sus años de servicio continuo en la compañía. Los días de vacaciones se disfrutarán de conformidad con el programa que se formule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio, según las necesidades de trabajo y del colaborador, comunicando el Gerente de la Unidad de Negocio el programa con toda anticipación al Gerente de la M",
+qwen2.5:1.5b,0.0,3,256,¿Cómo solicito un permiso de ausencia?,1,5.692,"Según la política de ausencias establecida en el documento ""política_de_ausencias.pdf"", los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.",
+qwen2.5:1.5b,0.0,3,256,¿Cómo solicito un permiso de ausencia?,2,2.637,"Según la política de ausencias mencionada en el contexto, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.",
+qwen2.5:1.5b,0.0,3,256,¿Cuál es el horario laboral de la empresa?,1,4.983,"El horario laboral de la empresa está establecido en el artículo 61 de la Ley Federal del Trabajo. Según la información proporcionada, la semana laboral será de 6 días, con goce de un día de descanso, el cual será asignado de acuerdo a las necesidades de la empresa.",
+qwen2.5:1.5b,0.0,3,256,¿Cuál es el horario laboral de la empresa?,2,2.408,"El horario laboral de la empresa está establecido en el artículo 61 de la Ley Federal del Trabajo. Según este artículo, la semana laboral será de 6 días, con goce de un día de descanso, el cual será asignado de acuerdo a las necesidades de la empresa.",
+qwen2.5:1.5b,0.0,3,256,¿Qué documentos necesito para solicitar vacaciones?,1,12.243,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Página 0 de la vacaciones.pdf**: Este documento proporciona la política general sobre vacaciones, permisos y días festivos, incluyendo la regulación sobre días hábiles y la prima vacacional.
+
+2. **Página 2 de la vacaciones.pdf**: Este anexo contiene la política específica para vacaciones, permisos y días festivos, incluyendo la política para vacaciones.
+
+3. **Página 0 de la vacaciones.pdf**: Este documento también proporcion",
+qwen2.5:1.5b,0.0,3,256,¿Qué documentos necesito para solicitar vacaciones?,2,9.026,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Página 0 de la ""Vacaciones.pdf""**: Este documento proporciona la política general sobre vacaciones, incluyendo la cantidad de días hábiles considerados y la reglamentación sobre días de descanso obligatorio.
+
+2. **Página 2 de la ""Vacaciones.pdf""**: Este anexo contiene la política específica para vacaciones, permisos y días festivos, incluyendo la política de pago de prima vacacional y las condiciones para la solicitud de vac",
+qwen2.5:1.5b,0.0,3,256,¿A quién debo contactar si tengo dudas de nómina?,1,3.529,"Para contactar si tienes dudas de la nómina, debes comunicarte con la Gerencia Administrativa de la Matriz.",
+qwen2.5:1.5b,0.0,3,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.2,"Para contactar si tienes dudas de la nómina, debes comunicarte con la Gerencia Administrativa de la Matriz.",
+qwen2.5:1.5b,0.1,1,256,¿Cuántos días de vacaciones me corresponden al año?,1,2.55,"La información sobre cuántos días de vacaciones se corresponden al año está disponible en la Política para Vacaciones, Permisos y Días Festivos del Anexo-030.",
+qwen2.5:1.5b,0.1,1,256,¿Cuántos días de vacaciones me corresponden al año?,2,0.994,La información sobre cuántos días de vacaciones se corresponden al año no está disponible en el contexto proporcionado.,
+qwen2.5:1.5b,0.1,1,256,¿Cómo solicito un permiso de ausencia?,1,6.838,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Si el empleado no informa de su ausencia, se considerará ausencia injustificada.
+3. Los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa.
+4. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.
+5. La empresa se reserva el derecho d",
+qwen2.5:1.5b,0.1,1,256,¿Cómo solicito un permiso de ausencia?,2,6.932,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Si el empleado no informa de su ausencia, se considerará ausencia injustificada.
+3. Los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa.
+4. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.
+5. La empresa se reserva el derecho d",
+qwen2.5:1.5b,0.1,1,256,¿Cuál es el horario laboral de la empresa?,1,2.58,"El horario laboral de la empresa se encuentra definido en la Política de Horas de Trabajo. Según la información proporcionada en la política, el horario ordinario se establece en el contrato laboral y el horario extraordinario se realiza por los trabajadores fuera de su horario ordinario.",
+qwen2.5:1.5b,0.1,1,256,¿Cuál es el horario laboral de la empresa?,2,2.601,"El horario laboral de la empresa se encuentra definido en la Política de Horas de Trabajo. Según la información proporcionada en la política, el horario ordinario se establece en el contrato laboral. Por lo tanto, el horario laboral de la empresa es el horario definido en el contrato laboral.",
+qwen2.5:1.5b,0.1,1,256,¿Qué documentos necesito para solicitar vacaciones?,1,6.599,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf** (Página 0): Documento que contiene la reglamentación general de vacaciones de la empresa.
+2. **Reglamentación de Vacaciones** (Página 0): Documento específico que establece las condiciones y procedimientos para la solicitud de vacaciones.
+
+Por lo tanto, necesitarás los documentos **Vacaciones.pdf** y **Reglamentación de Vacaciones** para solicitar vacaciones.",
+qwen2.5:1.5b,0.1,1,256,¿Qué documentos necesito para solicitar vacaciones?,2,8.872,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf** (Página: 0): Documento que proporciona la información general sobre las vacaciones, incluyendo que se consideran como días hábiles seis días a la semana (de lunes a sábado inclusive).
+
+2. **Reglamentación de la empresa**: Documento que establece las reglas y procedimientos específicos para la solicitud de vacaciones, como la necesidad de comunicación previa con el Jefe Inmediato y el Gerente de la Unidad de ",
+qwen2.5:1.5b,0.1,1,256,¿A quién debo contactar si tengo dudas de nómina?,1,1.254,"Para contactar si tienes dudas sobre la nómina, debes comunicarte con el Gerente Matriz.",
+qwen2.5:1.5b,0.1,1,256,¿A quién debo contactar si tengo dudas de nómina?,2,0.839,"Si tienes dudas sobre la nómina, debes contactar al Gerente del Matriz.",
+qwen2.5:1.5b,0.1,2,256,¿Cuántos días de vacaciones me corresponden al año?,1,3.895,"Según el documento ""vacaciones.pdf"" (Página: 2), las vacaciones se calcularán en función del programa que se formule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio, según las necesidades de trabajo y del colaborador, comunicando el Gerente de la Unidad de Negocio el programa con toda anticipación al Gerente de la Matriz y al Gerente Administrativo de la Matriz.",
+qwen2.5:1.5b,0.1,2,256,¿Cuántos días de vacaciones me corresponden al año?,2,2.346,"Según el documento de la empresa, las vacaciones se calculan basándose en seis días a la semana (de lunes a sábado incluidos). Por lo tanto, al año, cada empleado tiene derecho a 42 días de vacaciones (6 días/semana x 7 semanas = 42 días).",
+qwen2.5:1.5b,0.1,2,256,¿Cómo solicito un permiso de ausencia?,1,5.227,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa.
+3. Aprobar el permiso de ausencia por escrito:
+   - Por parte del supervisor inmediato
+   - Por parte de la gerencia
+
+Recuerda que si no informas de tu ausencia, se considerará ausencia injustificada.",
+qwen2.5:1.5b,0.1,2,256,¿Cómo solicito un permiso de ausencia?,2,5.973,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Solicitar un permiso de ausencia por escrito.
+3. Utilizar el formato establecido por la empresa.
+4. Solicitar el permiso con anticipación, lo antes posible.
+5. Aprobarse el permiso por parte del supervisor inmediato.
+6. Aprobarse el permiso por parte de la gerencia.
+7. Informar a la empresa sobre cualquier enfermedad o accidente que pueda haber.
+
+",
+qwen2.5:1.5b,0.1,2,256,¿Cuál es el horario laboral de la empresa?,1,3.548,El horario laboral de la empresa está establecido en el artículo 2 de la Política de Horas de Trabajo.,
+qwen2.5:1.5b,0.1,2,256,¿Cuál es el horario laboral de la empresa?,2,1.058,El horario laboral de la empresa es establecido en el artículo 2 de la Política de Horas de Trabajo.,
+qwen2.5:1.5b,0.1,2,256,¿Qué documentos necesito para solicitar vacaciones?,1,9.124,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf** (Página: 0): Documenta las reglas y procedimientos para la solicitud de vacaciones, incluyendo la cantidad de días hábiles considerados y las condiciones para la cancelación de vacaciones.
+
+2. **Vacaciones.pdf** (Página: 2): Anexo-030, que contiene la política para vacaciones, permisos y días festivos, incluyendo la promesa de pago de prima vacacional en el período correspondiente.
+
+3. **Anexo-030** (Página:",
+qwen2.5:1.5b,0.1,2,256,¿Qué documentos necesito para solicitar vacaciones?,2,5.033,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf** (Página 0): Documenta las reglas y procedimientos para la solicitud de vacaciones, incluyendo la cantidad de días hábiles considerados y las condiciones para la cancelación de vacaciones.
+
+2. **Vacaciones.pdf** (Página 2): Anexo-030, que contiene la Política para vacaciones, permisos y días festivos, incluyendo la promesa de pago de prima vacacional y las condiciones para la solicitud de vacaciones.
+
+Por lo ",
+qwen2.5:1.5b,0.1,2,256,¿A quién debo contactar si tengo dudas de nómina?,1,3.852,"Si tienes dudas sobre la nómina, deberás contactar al Gerente del Matriz. Esta información se encuentra en la página 1 del documento ""vacaciones.pdf"".",
+qwen2.5:1.5b,0.1,2,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.064,"Para contactar si tienes dudas sobre la nómina, debes comunicarte con el Gerente del Matriz.",
+qwen2.5:1.5b,0.1,3,256,¿Cuántos días de vacaciones me corresponden al año?,1,6.455,"Según la política de vacaciones, permisos y días festivos del Grupo PROMESSA, los colaboradores tendrán derecho a disfrutar de vacaciones con el sueldo pagado a partir del primer año de servicios y en forma subsequente cada aniversario, a partir de su fecha de ingreso. Por lo tanto, si el empleado tiene un año de servicio en la Unidad de Negocio, tendrá derecho a 13 días de vacaciones al año.",
+qwen2.5:1.5b,0.1,3,256,¿Cuántos días de vacaciones me corresponden al año?,2,8.435,"Según la política de vacaciones, permisos y días festivos de GRUPO PROMESSA, los colaboradores disfrutarán de vacaciones de acuerdo a los siguientes puntos:
+
+1. Todos los colaboradores tendrán derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios y en forma subsiguiente cada aniversario, a partir de su fecha de ingreso.
+
+2. Los días de vacaciones que podrán disfrutar los colaboradores según su antigüedad en la Unidad de Negocio, serán dados a conocer por la Ger",
+qwen2.5:1.5b,0.1,3,256,¿Cómo solicito un permiso de ausencia?,1,5.61,"Según la política de ausencias establecida en el documento ""política_de_ausencias.pdf"", los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.",
+qwen2.5:1.5b,0.1,3,256,¿Cómo solicito un permiso de ausencia?,2,2.627,"Según la política de ausencias mencionada en el contexto, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.",
+qwen2.5:1.5b,0.1,3,256,¿Cuál es el horario laboral de la empresa?,1,5.011,"El horario laboral de la empresa está establecido en el artículo 61 de la Ley Federal del Trabajo. Según la información proporcionada, la semana laboral será de 6 días, con goce de un día de descanso, el cual será asignado de acuerdo a las necesidades de la empresa.",
+qwen2.5:1.5b,0.1,3,256,¿Cuál es el horario laboral de la empresa?,2,2.506,"El horario laboral de la empresa está establecido en el artículo 61 de la Ley Federal del Trabajo. Según este artículo, la semana laboral será de 6 días, con goce de un día de descanso, el cual será asignado de acuerdo a las necesidades de la empresa.",
+qwen2.5:1.5b,0.1,3,256,¿Qué documentos necesito para solicitar vacaciones?,1,7.965,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Página 0 de la vacaciones.pdf**: Este documento proporciona la política general sobre vacaciones, permisos y días festivos, incluyendo la reglamentación sobre días hábiles para efecto de vacaciones.
+
+2. **Página 2 de la vacaciones.pdf**: Este documento contiene la política específica para vacaciones, permisos y días festivos, incluyendo la política sobre la prima vacacional y la regulación sobre días hábiles para efecto de v",
+qwen2.5:1.5b,0.1,3,256,¿Qué documentos necesito para solicitar vacaciones?,2,9.058,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Página 0 de la vacaciones.pdf**: Este documento contiene la política general sobre vacaciones, permisos y días festivos, así como la regulación específica para la empresa.
+
+2. **Página 2 de la vacaciones.pdf**: Este documento contiene la política específica para vacaciones, permisos y días festivos, incluyendo la regulación sobre la prima vacacional y la política de permisos.
+
+3. **Anexo-030 de la vacaciones.pdf**: Este anex",
+qwen2.5:1.5b,0.1,3,256,¿A quién debo contactar si tengo dudas de nómina?,1,3.517,"Para contactar si tienes dudas sobre la nómina, debes comunicarte con la Gerencia Administrativa de la Matriz.",
+qwen2.5:1.5b,0.1,3,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.104,"Para contactar si tienes dudas de nómina, debes comunicarte con la Gerencia Administrativa de la Matriz.",
+qwen2.5:1.5b,0.3,1,256,¿Cuántos días de vacaciones me corresponden al año?,1,2.711,"La información sobre cuántos días de vacaciones se corresponden al año está disponible en la Política para vacaciones, permisos y días festivos, anexo-030, del documento vacaciones.pdf.",
+qwen2.5:1.5b,0.3,1,256,¿Cuántos días de vacaciones me corresponden al año?,2,1.001,La información sobre cuántos días de vacaciones se corresponden al año no está disponible en el documento proporcionado.,
+qwen2.5:1.5b,0.3,1,256,¿Cómo solicito un permiso de ausencia?,1,6.287,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Si el empleado no informa de su ausencia, se considerará ausencia injustificada.
+3. Los empleados deben solicitar un permiso de ausencia por escrito.
+4. El formato del permiso de ausencia debe ser utilizado por la empresa.
+5. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.
+6. La empresa se reserva el der",
+qwen2.5:1.5b,0.3,1,256,¿Cómo solicito un permiso de ausencia?,2,5.57,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa.
+3. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.
+4. La empresa se reserva el derecho de negar un permiso de ausencia si considera que la ausencia puede afectar negativamente a la productivid",
+qwen2.5:1.5b,0.3,1,256,¿Cuál es el horario laboral de la empresa?,1,1.471,"El horario laboral de la empresa se encuentra definido en la Política de Horas de Trabajo, que se encuentra en la página 2 del documento.",
+qwen2.5:1.5b,0.3,1,256,¿Cuál es el horario laboral de la empresa?,2,2.076,"El horario laboral de la empresa se encuentra definido en la Política de Horas de Trabajo. Según la política, el horario ordinario se establece en el contrato laboral y el horario extraordinario se realiza por los trabajadores fuera del horario ordinario.",
+qwen2.5:1.5b,0.3,1,256,¿Qué documentos necesito para solicitar vacaciones?,1,4.601,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf**: Este documento contiene la información específica sobre las vacaciones, incluyendo los días hábiles y las condiciones para la solicitud de vacaciones.
+
+2. **Reglamentación de la Empresa**: Este documento proporciona la normativa general de la empresa sobre la gestión de vacaciones, incluyendo las fechas de inicio y fin de las vacaciones, así como las condiciones para su solicitud.
+
+3. **Programa de Vacacion",
+qwen2.5:1.5b,0.3,1,256,¿Qué documentos necesito para solicitar vacaciones?,2,8.669,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf**: Este documento contiene la información específica sobre las vacaciones, incluyendo días hábiles, días de descanso obligatorio, y el procedimiento para solicitar y recibir las vacaciones.
+
+2. **Reglamentación de la empresa**: Este documento proporciona la normativa general de la empresa, incluyendo las políticas laborales y las regulaciones específicas sobre vacaciones.
+
+3. **Reglamentación de la Unidad de N",
+qwen2.5:1.5b,0.3,1,256,¿A quién debo contactar si tengo dudas de nómina?,1,1.062,"Si tienes dudas sobre la nómina, debes contactar al Gerente del Matriz.",
+qwen2.5:1.5b,0.3,1,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.022,"Si tienes dudas sobre la nómina, deberás contactar al Gerente de Matriz para que te asista.",
+qwen2.5:1.5b,0.3,2,256,¿Cuántos días de vacaciones me corresponden al año?,1,4.705,"Según la información proporcionada en el contexto, no se proporciona la cantidad exacta de días de vacaciones que el empleado debe tener al año. Sin embargo, se menciona que las vacaciones se disfrutan de conformidad con el programa que se formule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio, según las necesidades de trabajo y del colaborador, comunicando el Gerente de la Unidad de Negocio el programa con toda anticipación al Gerente de la Matriz y al Gerent",
+qwen2.5:1.5b,0.3,2,256,¿Cuántos días de vacaciones me corresponden al año?,2,3.447,"Según la información disponible en el documento ""vacaciones.pdf"" (Página: 2), las vacaciones se calculan en función del programa que se formule con el Jefe Inmediato y la previa autorización del Gerente de la Unidad de Negocio. Sin embargo, la cantidad exacta de días de vacaciones que se obtendrá al año depende de la política específica establecida por la empresa y no se especifica en este documento.",
+qwen2.5:1.5b,0.3,2,256,¿Cómo solicito un permiso de ausencia?,1,6.739,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Solicitar un permiso de ausencia por escrito.
+3. Utilizar el formato establecido por la empresa.
+4. Solicitar el permiso por anticipación, lo que debe ser aprobado por el supervisor inmediato y por la gerencia.
+5. La empresa se reserva el derecho de negar un permiso de ausencia si considera que la ausencia puede afectar negativamente a la producti",
+qwen2.5:1.5b,0.3,2,256,¿Cómo solicito un permiso de ausencia?,2,6.392,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato de su intención de estar ausente o llegar tarde.
+2. Solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa.
+3. Asegurarse de que el permiso de ausencia sea aprobado por el supervisor inmediato y por la gerencia.
+4. Si se considera que la ausencia puede afectar negativamente a la productividad de la empresa o al cumplimiento de sus obligacione",
+qwen2.5:1.5b,0.3,2,256,¿Cuál es el horario laboral de la empresa?,1,3.511,El horario laboral de la empresa está establecido en el artículo 61 de la Ley Federal del Trabajo.,
+qwen2.5:1.5b,0.3,2,256,¿Cuál es el horario laboral de la empresa?,2,0.988,El horario laboral de la empresa es establecido en el artículo 2 de la Política de Horas de Trabajo.,
+qwen2.5:1.5b,0.3,2,256,¿Qué documentos necesito para solicitar vacaciones?,1,4.641,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Página 0 de Vacaciones.pdf**: Este documento proporciona la información general sobre las vacaciones, incluyendo los días hábiles y las excepciones a las vacaciones.
+
+2. **Página 2 de Vacaciones.pdf**: Este documento contiene la política de vacaciones, permisos y días festivos, así como la promesa de revisión y la regulación de la prima vacacional.
+
+Por lo tanto, necesitarás los documentos de las páginas 0 y 2 de la carpeta ",
+qwen2.5:1.5b,0.3,2,256,¿Qué documentos necesito para solicitar vacaciones?,2,4.658,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Vacaciones.pdf** - Página 0: Documenta las reglas específicas sobre días hábiles y días de descanso obligatorio.
+2. **Vacaciones.pdf** - Página 2: Anexo-030, Política para vacaciones, permisos y días festivos - Revisión: 00: Documenta la política general sobre vacaciones, permisos y días festivos, incluyendo la prima vacacional y el proceso de solicitud.
+
+Por lo tanto, necesitarás los dos documentos mencionados para completa",
+qwen2.5:1.5b,0.3,2,256,¿A quién debo contactar si tengo dudas de nómina?,1,3.771,"Si tienes dudas sobre la nómina, deberás contactar al Gerente del Matriz. Esta información se encuentra en la página 1 del documento ""vacaciones.pdf"".",
+qwen2.5:1.5b,0.3,2,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.319,"Si tienes dudas sobre la nómina, debes contactar al Gerente del Matriz. Esta información se encuentra en la página 1 del documento ""vacaciones.pdf"".",
+qwen2.5:1.5b,0.3,3,256,¿Cuántos días de vacaciones me corresponden al año?,1,13.822,"Según la política de vacaciones, permisos y días festivos de GRUPO PROMESSA, los colaboradores disfrutan de vacaciones de acuerdo a los siguientes puntos:
+
+1. Todos los colaboradores tendrán derecho a disfrutar vacaciones con el sueldo pagado a partir del primer año de servicios y en forma subsequente cada aniversario, a partir de su fecha de ingreso.
+2. Los días de vacaciones que podrán disfrutar los colaboradores según su antigüedad en la Unidad de Negocio, serán dados a conocer por la Gerenci",
+qwen2.5:1.5b,0.3,3,256,¿Cuántos días de vacaciones me corresponden al año?,2,3.776,"Según la Política para Vacaciones, Permisos y Días Festivos, la cantidad de días de vacaciones que recibirás al año se determinará basándote en tu antigüedad en la Unidad de Negocio. Los días de vacaciones que podrás disfrutar se informarán previamente por la Gerencia de la Unidad de Negocio, autorizado por la Gerencia de Matriz, de acuerdo a la Ley Federal de Trabajo y/o a tu propia reglamentación.",
+qwen2.5:1.5b,0.3,3,256,¿Cómo solicito un permiso de ausencia?,1,6.62,"Para solicitar un permiso de ausencia, los empleados deben:
+
+1. Informar a su supervisor inmediato si van a estar ausentes o tienen intención de llegar tarde.
+2. Solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa.
+3. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.
+
+Esta solicitud debe ser realizada con anticipación para evitar la consideración de ausencia injustificada.",
+qwen2.5:1.5b,0.3,3,256,¿Cómo solicito un permiso de ausencia?,2,2.341,"Según la política de ausencias mencionada en el contexto, los empleados deben solicitar un permiso de ausencia por escrito con anticipación, utilizando el formato establecido por la empresa. Los permisos de ausencia deben ser aprobados por el supervisor inmediato y por la gerencia.",
+qwen2.5:1.5b,0.3,3,256,¿Cuál es el horario laboral de la empresa?,1,5.26,"El horario laboral de la empresa está establecido en la Política de Horas de Trabajo, documento disponible en la fuente Politica_de_Horas_de_Trabajo.pdf, página 2. Según la información proporcionada, el horario ordinario se establece en el contrato laboral, mientras que el horario extraordinario se realiza por los trabajadores fuera de su horario ordinario.",
+qwen2.5:1.5b,0.3,3,256,¿Cuál es el horario laboral de la empresa?,2,1.889,"El horario laboral de la empresa está establecido en el artículo 61 de la Ley Federal del Trabajo y se extiende por 6 días, con un día de descanso asignado según las necesidades de la empresa.",
+qwen2.5:1.5b,0.3,3,256,¿Qué documentos necesito para solicitar vacaciones?,1,7.674,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Página 0 de la 'vacaciones.pdf':** Este documento proporciona la política general sobre vacaciones, permisos y días festivos, incluyendo la reglamentación sobre días hábiles para efecto de vacaciones.
+
+2. **Página 2 de la 'vacaciones.pdf':** Este anexo contiene la política específica para vacaciones, permisos y días festivos, incluyendo la reglamentación sobre días hábiles para efecto de vacaciones.
+
+Por lo tanto, necesitará",
+qwen2.5:1.5b,0.3,3,256,¿Qué documentos necesito para solicitar vacaciones?,2,8.947,"Para solicitar vacaciones, necesitarás los siguientes documentos:
+
+1. **Página 0 de la ""Vacaciones.pdf""**: Este documento contiene la política general sobre vacaciones, permisos y días festivos, así como la regulación general.
+
+2. **Página 2 de la ""Vacaciones.pdf""**: Este documento contiene la política específica para vacaciones, permisos y días festivos, incluyendo detalles específicos sobre la prima vacacional y la forma de solicitud.
+
+3. **Autorización del Jefe Inmediato**: Necesitarás la aut",
+qwen2.5:1.5b,0.3,3,256,¿A quién debo contactar si tengo dudas de nómina?,1,3.371,"Si tienes dudas sobre la nómina, deberías contactar con el Gerente de la Matriz.",
+qwen2.5:1.5b,0.3,3,256,¿A quién debo contactar si tengo dudas de nómina?,2,1.056,"Para contactar si tienes dudas de la nómina, debes comunicarte con la Gerencia Administrativa de la Matriz.",
