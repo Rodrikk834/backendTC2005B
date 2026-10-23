@@ -5,17 +5,16 @@ const apiRouter = require('./routes');
 
 const app = express();
 
-app.use(cors({
+const corsOptions = {
   origin: true,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
-}));
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'ngrok-skip-browser-warning', 'Accept']
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
-
-app.use(cors());
-
 app.use(express.static(path.join(__dirname, '../../public')));
 
 app.use('/api', apiRouter);
